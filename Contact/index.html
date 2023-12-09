@@ -12,65 +12,18 @@
 			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 			
 			body {
-				margin: 0;
-				box-sizing: border-box;
 				background-color:#202124;
-			}
-			
-			.container {
-				line-height: 150%;
-			}
-			
-			.header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 15px;
-				background-color: #303134;
-			}
-			
-			.header h1 {
-				color: #5500F0;
-				font-size: 30px;
-				font-family: "Pacifico", cursive;
-			}
-			
-			.header .social a {
-				padding: 0 5px;
-				color: #222222;
-			}
-			
-			.left {
-				float: left;
-				width: 180px;
+				box-sizing: border-box;
+				color:#FFFFFF;
+				font-family: Arial;
 				margin: 0;
-				padding: 1em;
-			}
-			
-			.content {
-				margin-left: 190px;
-				border-left: 1px solid #d4d4d4;
-				padding: 1em;
-				overflow: hidden;
-			}
-			
-			ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				font-family: sans-serif;
 			}
 			
 			li a {
-				display: block;
 				color: #FFFFFF;
+				display: block;
 				padding: 8px 16px;
 				text-decoration: none;
-			}
-			
-			li a.active {
-				background-color: #404144;
-				color: white;
 			}
 			
 			li a:hover:not(.active) {
@@ -79,10 +32,21 @@
 			}
 			
 			table {
-				font-family: arial, sans-serif;
 				border-collapse: collapse;
-				width: 100%;
+				font-family: arial, sans-serif;
 				margin: 30px 0;
+				width: 100%;
+			}
+			
+			.container {
+				line-height: 150%;
+			}
+			
+			ul {
+				font-family: sans-serif;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
 			}
 			
 			td,
@@ -96,19 +60,63 @@
 				color: white;
 			}
 			
-			tr td i.fas {
+			.active {
+				background-color: #404144;
+				color: white;
+			}
+			
+			.content {
+				border-left: 1px solid #d4d4d4;
+				margin-left: 190px;
+				overflow: hidden;
+				padding: 1em;
+			}
+			
+			.fas {
 				display: block;
 				font-size: 35px;
 				text-align: center;
 			}
 			
 			.footer {
-				padding: 55px 20px;
 				background-color: #9e3030;
 				color: white;
+				padding: 55px 20px;
 				text-align: center;
 			}
-
+			
+			.header {
+				align-items: center;
+				background-color: #303134;
+				display: flex;
+				justify-content: space-between;
+				padding: 15px;
+			}
+			
+			.header h1 {
+				color: #5500F0;
+				font-family: "Pacifico", cursive;
+				font-size: 30px;
+			}
+			
+			.header .social a {
+				color: #222222;
+				padding: 0 5px;
+				text-decoration : none;
+			}
+			
+			.hide {
+				color:#FFFFFF;
+				text-decoration:none;
+			}
+			
+			.left {
+				float: left;
+				margin: 0;
+				padding: 1em;
+				width: 180px;
+			}
+			
 			.Flo {
 				color:#FF0000;
 			}
@@ -179,7 +187,7 @@
 			</main>
 			<div id="barre_fixe" style="position: fixed;bottom: 0;width: 100%;background: #9e3030;color: white;text-align: center;padding: 48px 0px;">
 				<p>
-					<font size="5" face="arial" title="Objectif zéro cookies ! 🍪">Site encore sous développement... (WIP)<a href="https://github.com/ChefUiChef/chefuichef.github.io/" target="_blank" title="Redirection vers le code source :) ">🍪</a></font>
+					<font size="5" title="Objectif zéro cookies ! 🍪">Site encore sous développement... (WIP)<a href="https://github.com/ChefUiChef/chefuichef.github.io/" target="_blank" title="Redirection vers le code source :)" class="hide">🍪</a></font>
 				</p>
 			</div>
 		</div>
