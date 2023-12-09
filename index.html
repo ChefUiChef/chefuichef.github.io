@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="refresh" content="10">
 		<title>Site de Chef Ui Chef [WIP]</title>				<!-- Tab title -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
 		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
@@ -12,66 +13,18 @@
 			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 			
 			body {
-				margin: 0;
-				box-sizing: border-box;
 				background-color:#202124;
-			}
-			
-			.container {
-				line-height: 150%;
-			}
-			
-			.header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 15px;
-				background-color: #303134;
-			}
-			
-			.header h1 {
-				color: #5500F0;
-				font-size: 30px;
-				font-family: "Pacifico", cursive;
-			}
-			
-			.header .social a {
-				padding: 0 5px;
-				color: #222222;
-				text-decoration : none;
-			}
-			
-			.left {
-				float: left;
-				width: 180px;
+				box-sizing: border-box;
+				color:#FFFFFF;
+				font-family: Arial;
 				margin: 0;
-				padding: 1em;
-			}
-			
-			.content {
-				margin-left: 190px;
-				border-left: 1px solid #d4d4d4;
-				padding: 1em;
-				overflow: hidden;
-			}
-			
-			ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				font-family: sans-serif;
 			}
 			
 			li a {
-				display: block;
 				color: #FFFFFF;
+				display: block;
 				padding: 8px 16px;
 				text-decoration: none;
-			}
-			
-			.active {
-				background-color: #404144;
-				color: white;
 			}
 			
 			li a:hover:not(.active) {
@@ -80,10 +33,21 @@
 			}
 			
 			table {
-				font-family: arial, sans-serif;
 				border-collapse: collapse;
-				width: 100%;
+				font-family: arial, sans-serif;
 				margin: 30px 0;
+				width: 100%;
+			}
+			
+			.container {
+				line-height: 150%;
+			}
+			
+			ul {
+				font-family: sans-serif;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
 			}
 			
 			td,
@@ -97,6 +61,18 @@
 				color: white;
 			}
 			
+			.active {
+				background-color: #404144;
+				color: white;
+			}
+			
+			.content {
+				border-left: 1px solid #d4d4d4;
+				margin-left: 190px;
+				overflow: hidden;
+				padding: 1em;
+			}
+			
 			.fas {
 				display: block;
 				font-size: 35px;
@@ -104,16 +80,44 @@
 			}
 			
 			.footer {
-				padding: 55px 20px;
 				background-color: #9e3030;
 				color: white;
+				padding: 55px 20px;
 				text-align: center;
 			}
-
-			.hide {
-				text-decoration:none;
-				color:#FFFFFF;
+			
+			.header {
+				align-items: center;
+				background-color: #303134;
+				display: flex;
+				justify-content: space-between;
+				padding: 15px;
 			}
+			
+			.header h1 {
+				color: #5500F0;
+				font-family: "Pacifico", cursive;
+				font-size: 30px;
+			}
+			
+			.header .social a {
+				color: #222222;
+				padding: 0 5px;
+				text-decoration : none;
+			}
+			
+			.hide {
+				color:#FFFFFF;
+				text-decoration:none;
+			}
+			
+			.left {
+				float: left;
+				margin: 0;
+				padding: 1em;
+				width: 180px;
+			}
+			
 		</style>	<!-- ----------(End) Style ---------- -->
 	</head>
 	<body>
@@ -121,7 +125,7 @@
 			<header class="header">					<!-- (Start) Top bar -->
 				<h1>Chef Ui Chef</h1>
 				<div class="social" style="padding: 1em;">	<!-- (Start) Social Links -->
-					<font <a="" class="social" face="arial" size="4px"><span style="color:#ffffff" face="arial">Je suis sur :</span>
+					<font <a="" class="social" size="4px"><span>Je suis sur :</span>
 						<a href="https://discord.gg/82cB9Zps7w" target="_blank">
 							<i class="fab fa-discord" style="color:#5865F2" title="Ce serveur discord (pas le mien, celui de TontonDemon)"></i>
 						</a>
@@ -160,35 +164,30 @@
 				<br>
 				<br>
 				<p>
-					<font face="arial" color="#FFFFFF">
-						<a class="hide" href="#projetvr" target="_blank" title="(Lien secret de mon projet 🤫)">"Le projet VR avance"</a>
-						<br>
-						- Chef Ui Chef
-					</font>
+					<a class="hide" href="#projetvr" target="_blank" title="(Lien secret de mon projet 🤫)">"Le projet VR avance"</a>
+					<br>
+					- Chef Ui Chef
 				</p>
 			</aside>						<!-- (End) Left bar -->
 			<main class="content">
-				<font face="arial" color="#FFFFFF">
-					<h2>A propos</h2>
-					<p>Chef Ui Chef, Alias CHIEF pour certains. Gamer depuis tout jeune, surtout sur PC et PCVR... J'aime les PC ! jamais trop touché aux consoles par contre... sauf la Switch. j'aime aussi regarder le code source sur divers plugins</p>
-					<h2>Qui suis-je ?</h2>
-					<p>Un modo discord de <a href="https://discord.gg/tontondemon" target="_blank" title="Discord de 😈 TONTON DΣMOИ™ (mon lien d'invitation de soutien est en haut sur l'icon Discord)">TontonDemon</a> et vive la salade de pomme de terre ! 🥗🥔<a href="https://discord.gg/svpTmZfbxr" target="_blank" title="discord de titiodu64 :)" class="hide">.</a></p>
-					<hr>
-					<h2>
-						<center>
-							<iframe src="https://replay.beatleader.xyz/?scoreId=7200478" allowfullscreen="" width="95%" height="720"></iframe>
-							<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/82FgR0Pp6vU" title="YouTube video player" frameborder="1" allowfullscreen="" allow="web-share"></iframe>
-						</center>
-					</h2>
-				</font>
+				<h2>A propos</h2>
+				<p>Chef Ui Chef, Alias CHIEF pour certains. Gamer depuis tout jeune, surtout sur PC et PCVR... J'aime les PC ! jamais trop touché aux consoles par contre... sauf la Switch. j'aime aussi regarder le code source sur divers plugins</p>
+				<h2>Qui suis-je ?</h2>
+				<p>Un modo discord de <a href="https://discord.gg/tontondemon" target="_blank" title="Discord de 😈 TONTON DΣMOИ™ (mon lien d'invitation de soutien est en haut sur l'icon Discord)">TontonDemon</a> et vive la salade de pomme de terre ! 🥗🥔<a href="https://discord.gg/svpTmZfbxr" target="_blank" title="discord de titiodu64 :)" class="hide">.</a></p>
+				<hr>
+				<h2>
+					<center>
+						<iframe src="https://replay.beatleader.xyz/?scoreId=7200478" allowfullscreen="" width="95%" height="720"></iframe>
+						<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/82FgR0Pp6vU" title="YouTube video player" frameborder="1" allowfullscreen="" allow="web-share"></iframe>
+					</center>
+				</h2>
 			</main>
 			<div id="barre_fixe" style="position: fixed;bottom: 0;width: 100%;background: #9e3030;color: white;text-align: center;padding: 48px 0px;">
 				<p>
-					<font size="5" face="arial" title="Objectif zéro cookies ! 🍪">Site encore sous développement... (WIP)<a href="https://github.com/ChefUiChef/chefuichef.github.io/" target="_blank" title="Redirection vers le code source :)" class="hide">🍪</a></font>
+					<font size="5" title="Objectif zéro cookies ! 🍪">Site encore sous développement... (WIP)<a href="https://github.com/ChefUiChef/chefuichef.github.io/" target="_blank" title="Redirection vers le code source :)" class="hide">🍪</a></font>
 				</p>
 			</div>
 		</div>
-		<header class="header" style="height: 125px;">
-		</header>
+		<header class="header" style="height: 125px;"></header>
 	</body>
 </html>
