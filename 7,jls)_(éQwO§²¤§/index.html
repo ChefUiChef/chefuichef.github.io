@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>🤫 - Chef Ui Chef</title>				<!-- Tab title -->
-		<!--<meta http-equiv="refresh" content="5"> <!-- Auto refresh, debug only. Remove the "<!--" in the beginning to make this work :) -->
+		<meta http-equiv="refresh" content="5"> <!-- Auto refresh, debug only. Remove the "<!--" in the beginning to make this work :) -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
 		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
 		<style>
@@ -194,12 +194,18 @@
 				<h1>Projet de tracker VR 🤫</h1>
 				<span>Vient à la base de Millomaker MAIS avec mes petits ajouts et préférences</span>
 				<span>(Comme sa je vous apprendrais de mes erreurs de débutant également 😉)</span>
+				<br>
+				<span>(I will do an English version later when I'm done with the French)</span>
 				<hr>
 				<h2>Le tutoriel</h2>
 				<span>Pour cela, j'ai basiquement suivi ce tutoriel (Merci Millomaker si tu passes par là ❤️)</span>
 				<center>
 					<iframe class="Tutorial" src="https://www.youtube-nocookie.com/embed/3K52qEGQP64" title="YouTube video player" frameborder="1" allowfullscreen="" allow="web-share"></iframe>
 				</center>
+				<h3>Quelques docs</h3>
+				<a class="link" href="https://www.patreon.com/posts/86187423" target="_blank" title="Redirige vers le post Patreon de Millomaker">Post Patreon de Millomaker</a>
+				<br>
+				<a class="link" href="https://docs.slimevr.dev/index.html" target="_blank" title="Redirige vers la doc SlimeVR">Documentation SlimeVR</a>
 				<hr>
 				<h2 title="Les liens cliquables sur le tableau sont en parti affiliés avec les liens de Millomaker">Les composants requis (pour 8 Trackers) en parti affilié par Millomaker:</h2>
 				<table>
@@ -273,7 +279,10 @@
 				</table>
 				<h4>Quelques points (que je trouve) important à dire :</h4>
 				<ul>
-					<li>Le Wemos D1 Mini n'a pas le même lien que celui de Millomaker malgré les images du vendeur.</li>
+					<li>⚠️ Après, il vous faudra imprimer une pièce en 3D donc, si vous avez une imprimante 3D (ou que vous conaissez quelqu'un qui peut vous l'imprimer) c'est parfait 👌</li>
+					<li>
+						Le Wemos D1 Mini n'a pas le même lien que celui de Millomaker malgré les images du vendeur.
+					</li>
 					<a class="link" href="https://s.click.aliexpress.com/e/_DmIIdLP&v=3K52qEGQP64" target="_blank" title="Lien (Affilié) de Millomaker">(Son lien)</a>
 					<li>Quand j'avais commandé avec son lien, j'ai pas reçu exactement la même pièce alors j'ai dû recommander ailleurs</li>
 					<a class="link" href="orders.png" title="Affiche une photo de comparaison entre les 2 commandes">(Voir photo)</a>
@@ -285,25 +294,53 @@
 				
 				<hr>
 				<h2>Mon setup</h2>
-				<br>
 				<span>Par ici, pas grand chose à raconter... voici ce que j'aurais recommandé :</span>
 				<ul>
 					<li>un PC assez puissant pour faire démarrer sans trop de soucis SteamVR</li>
 					<li>Un point d'accès sans fil à côté de votre PC
 					<br>Je recommanderais au mieux d'avoir votre PC qui fait point d'accès
 					<br> ou bien un routeur dans la même pièce que votre PC
-					<br>(évitez les points d'accès avec un téléphone, les trackers ont tendance à se déconnecter, même proche</li>
+					<br>⚠️(évitez les points d'accès avec un téléphone, les trackers ont tendance à se déconnecter, même proche)</li>
+					<br>
 				</ul>
-				<br>
 				<hr>
-				<h2>La partie soudage</h2>
+				<h2>La partie soudage et assemblage</h2>
+				<span>Par ici, un peu trop la flemme d'expliquer tout le process de soudage pour le moment...
+					<br>... Mais vous pouvez aller voir le </span>
+				<a class="link" href="https://s.click.aliexpress.com/e/_DmIIdLP&v=3K52qEGQP64" target="_blank" title="Lien (Affilié) de Millomaker">Post Patreon de Millomaker</a>
+				<span>pour ça</span>
 				<br>
-				<span>Par ici, un peu trop la flemme d'expliquer tout le process de soudage...
-				<br>... Mais vou pouvez aller voir le Post Patreon de Millomaker pour ça</span>
+				<br>
+				<span>Voici également le fichier 3D à imprimer, que vous pouvez retrouver <a class="link" href="https://www.thingiverse.com/thing:6115611" target="_blank" title="Boîtier 3d pour Tracker, conçu par Milomaker">ici</a></span>
+				<br>
+				<br>
 				<hr>
 				<h2>Le Firmware</h2>
-				
-				
+				<span>Par ici, 2 méthodes :</span>
+				<h3>La méthode simple</h3>
+				<span>Par ici, tout le setup sera simple à comprendre et à faire. <a class="link" href="https://slimevr-firmware.bscotch.ca/ target="_blank" title="Utilitaire en ligne permettant d'upload le code directement en ligne">Cet utilitaire</a> permet d'upload le firmware directement en ligne.
+				<br>Assurez-vous d'avoir bien branché le tracker au PC et d'avoir un navigateur compatible (comme Microsoft Edge)</span>
+				<br><span>Ensuite, Entrez ces paramètres ci-dessous et après, cliquez sur Continue</span>
+				<br>
+				<img src="firmware_parameters.png" width="40%">
+				<br>
+				<br>
+				<h3>La méthode compliquée</h3>
+				<span>Pour ça, il faudra installer plein de logiciels, tout est expliquée dans <a class="link" href="https://docs.slimevr.dev/firmware/setup-and-install.html" target="_blank" title="Renvoie vers une partie de la doc de SlimeVR">Cette doc</a></span>
+				<br>
+				<span></span>
+				<br>
+				<br>
+				<hr>
+				<h2>Dernières étapes</h2>
+				<a>Notes, pas encore terminé</a><br>
+				<a>SlimeVR Server</a>
+				<br>
+				<a>Calibration</a>
+				<br>
+				<a>SteamVR</a>
+				<br>
+				<h1>FIN</h1>
 				
 				
 				
@@ -318,6 +355,8 @@
 				
 				
 				<!-- La suite, Au prochain épisode...-->
+				<br>
+				<br>
 				<span class="temp">(J'y travaille encore sur la suite de la page, soyez patients... 😉)</span>
 			</main>
 			<div id="barre_fixe" style="position: fixed;bottom: 0;width: 100%;background: #9e3030;color: white;text-align: center;padding: 16px 0px;">
