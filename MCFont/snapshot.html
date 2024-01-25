@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<link rel="icon" type="image/jpg" href="/stock/titiodu64.ico">	<!-- Tab Icon -->
+		<link rel="icon" type="image/jpg" href="/stock/chefuichef.jpg">	<!-- Tab Icon -->
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>MCFont by Chef U Chef</title>				<!-- Tab title -->
+		<title>MCFont by Chef Ui Chef</title>				<!-- Tab title -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>  <!-- Style for Minecraft Font -->
+		<!-- (Start) Discord Embed -->
+		<meta content="MCFont by Chef Ui Chef" property="og:title" />
+		<meta content="Create your Minecraft text simply by writing it !" property="og:description" />
+		<meta content="https://chefuichef.fr/" property="og:url" />
+		<meta content="chefuichef.fr/stock/chefuichef.jpg" property="og:image" />
+		<meta content="#80ff80" data-react-helmet="true" name="theme-color" />
+		<!-- (End) Discord Embed -->
 		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
 <style>
 			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");				/* */
@@ -19,6 +26,7 @@
 				color:#FFFFFF;
 				font-family: Arial;
 				margin: 0;
+				transition-duration:0.5s;
 			}
 			
 			.container {
@@ -31,11 +39,11 @@
 				padding: 0em;
 			}
 			
-			.content input{
+			.content textarea{
 				background-color:transparent;
 				border-color:transparent;
 				width:100%;
-				height:80vh;
+				height:100vh;
 				color:#FFFFFF;
 				text-align:center;
 				font-family: 'Minecraftia', sans-serif;		/* Minecraft font selected*/
@@ -121,6 +129,54 @@
 				padding-right:1em;
 			}
 			
+			.settings{
+				text-align:center;
+				position:fixed;
+				right:8px;
+				bottom:8px;
+				background-color:rgba(255, 255, 255, 25%);
+				padding:12px;
+				border-radius:4em;
+				color:#FFFFFF;
+				transition-duration:0.3s;
+			}
+			
+			.settings span{
+				font-size:2em;
+			}
+			
+			.settings:hover{
+				text-align:center;
+				position:fixed;
+				right:8px;
+				bottom:8px;
+				background-color:rgba(255, 255, 255, 50%);
+				padding:12px;
+				border-radius:4em;
+				transition-duration:0.3s;
+			}
+			
+			#colorOptions {
+				display: none;
+				background-color:#000000;
+				text-align:center;
+				position:fixed;
+				bottom:0px;
+			}
+			
+			.colorOption {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				margin: 5px;
+				cursor: pointer;
+				transition-duration:0.3s;
+			}
+			
+			button {
+				padding: 10px;
+				margin: 5px;
+				cursor: pointer;
 </style>	<!-- ----------(End) Style ---------- -->
 	</head>
 	<body>
@@ -154,8 +210,29 @@
 				</div>						<!-- (End) Social Links -->
 			</header>						<!-- (End) Top bar -->
 			<div class="content">
-			<input type="textarea">
+				<textarea placeholder=">Start writing here!<"></textarea>
 			</div>
 		</div>
+		<div class="settings" onclick="toggleColorOptions()">
+			<span>Settings ⚙</span>
+		</div>
+		<div id="colorOptions">
+			<div class="colorOption" style="background-color: #FF0000;" onclick="changerCouleur('#FF0000')"></div>
+			<div class="colorOption" style="background-color: #00FF00;" onclick="changerCouleur('#00FF00')"></div>
+			<div class="colorOption" style="background-color: #0000FF;" onclick="changerCouleur('#0000FF')"></div>
+			<div class="colorOption" style="background-color: #202124;" onclick="changerCouleur('#202124')"></div>
+			<div class="colorOption" style="background-color: #FFFFFF;" onclick="changerCouleur('#FFFFFF')"></div>
+		</div>
+		<script>
+			function toggleColorOptions() {
+				var colorOptions = document.getElementById('colorOptions');
+				var currentDisplay = colorOptions.style.display;
+				colorOptions.style.display = (currentDisplay === 'none') ? 'block' : 'none';
+			}
+			
+			function changerCouleur(couleur) {
+				document.body.style.backgroundColor = couleur;
+			}
+  </script>
 	</body>
 </html>
