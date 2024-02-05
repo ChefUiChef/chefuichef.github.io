@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>MCFont</title>				<!-- Tab title -->
+		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
+		<style>	
+					body {
+						background-color:#202124;
+						box-sizing: border-box;
+						color:#FFFFFF;
+						font-family: Arial;
+						margin: 0;
+						transition-duration:0.5s;
+					}
+					
+					.container {
+						font-family:"Minecraftia";
+						font-size:8em;
+						text-align:center;
+					}
+
+					.mcfont{					/* Minecraft font */
+						font-family: 'Minecraftia';
+						text-shadow:
+							1px 1px 0px #000000,
+							2px 2px 0px #000000;
+					}
+					
+/*
+		Credits :
+
+		Found at Fontlibrary.org (https://fontlibrary.org/en/font/minecraftia)
+		https://fontlibrary.org/face/minecraftia
+		Source of the Font : https://fontlibrary.org/assets/fonts/minecraftia/71962a7e3d4a70435c030466a12f1d63/bf3f245b7cd53caea0cb07d265a64adc/MinecraftiaRegular.ttf
+
+
+		Category : Serif
+
+		License : CC-BY-SA
+
+		Family : Minecraftia
+
+		Designer : Andrew Tyler
+
+		Foundry : Andrew Tyler
+
+		Description : Cool Minecraft font !
+
+		Full Language Support:
+			Basic Latin, Euro, Western European
+
+*/
+
+					/* ---------- (Start) Integrated CSS of Minecraft Font ---------- */
+					@font-face {
+						font-family: 'MinecraftiaRegular';
+						src: url('MinecraftiaRegular.ttf') format('truetype');
+						font-weight: normal;
+						font-style: normal;
+					}
+
+					/* The following rules are deprecated. */ 
+					
+					@font-face {
+						font-family: 'Minecraftia';
+						src: url('MinecraftiaRegular.ttf') format('truetype');
+						font-weight: normal;
+						font-style: normal;
+					}
+					/* ---------- (Start) Integrated CSS of Minecraft Font ---------- */
+
+		</style>	<!-- ----------(End) Style ---------- -->
+	</head>
+	<body>
+		<div class="container">
+			test MCFont
+		</div>
+	</body>
+</html>
