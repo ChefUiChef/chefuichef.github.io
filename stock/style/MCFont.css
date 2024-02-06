@@ -26,7 +26,7 @@
 /* ---------- (Start) Integrated CSS of Minecraft Font ---------- */
 	@font-face {
 		font-family: 'MinecraftiaRegular';						/* Name of the Font. Can be Customisable*/
-		src: url('..\fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -35,7 +35,7 @@
 
 	@font-face {
 		font-family: 'Minecraftia';								/* Name of the Font. Can be Customisable*/
-		src: url('..\fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -47,7 +47,7 @@
 
 	@font-face {
 		font-family: 'MC-Enchanting-Table';								/* Name of the Font. Can be Customisable*/
-		src: url('..\fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
