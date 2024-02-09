@@ -23,10 +23,10 @@
 
 */
 
-/* ---------- (Start) CSS of Minecraft Font ---------- */
+/* ---------- (Start) Integrated CSS of Minecraft Font ---------- */
 	@font-face {
-		font-family: 'MinecraftiaRegular';						/* Name of the Font. Can be Customisable*/
-		src: url('..\style/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-family: 'MinecraftiaRegular', 'MCFont_R';						/* Name of the Fonts. Can be Customisable */
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format) */
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -34,20 +34,19 @@
 	/* The following rules are deprecated. */ 	
 
 	@font-face {
-		font-family: 'Minecraftia';								/* Name of the Font. Can be Customisable*/
-		src: url('..\style/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-family: 'Minecraftia', 'MCFont', 'MCFont_C';								/* Name of the Fonts. Can be Customisable*/
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format) */
 		font-weight: normal;
 		font-style: normal;
 	}
 	
 	@font-face {
-		font-family: 'MC-Enchanting-Table';								/* Name of the Font. Can be Customisable*/
-		src: url('..\style/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-family: 'MC-Enchanting-Table', 'MCFont_E';								/* Name of the Fonts. Can be Customisable */
+		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format) */
 		font-weight: normal;
 		font-style: normal;
 	}
-/* ---------- (End) CSS of Minecraft Font ---------- */
-
+/* ---------- (End) Integrated CSS of Minecraft Font ---------- */
 
 .MC {
 	font-family: 'Minecraftia';
@@ -58,5 +57,10 @@
 }
 
 * {
-    font-family: 'Minecraftia';
+    font-family: 'MCFont';
 }
+
+/* -----------------------------------
+	CSS Maded with ❤ by Chef Ui Chef
+	MCFont_Everywhere V1.1
+   ----------------------------------- */ 
