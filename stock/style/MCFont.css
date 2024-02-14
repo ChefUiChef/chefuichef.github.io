@@ -1,61 +1,77 @@
-/*
-		Credits :
+/* ---------- (Start) CSS of Minecraft Font ---------- */
 
-		Found at Fontlibrary.org (https://fontlibrary.org/en/font/minecraftia)
-		https://fontlibrary.org/face/minecraftia
-		Source of the Font : https://fontlibrary.org/assets/fonts/minecraftia/71962a7e3d4a70435c030466a12f1d63/bf3f245b7cd53caea0cb07d265a64adc/MinecraftiaRegular.ttf
-
-
-		Category : Serif
-
-		License : CC-BY-SA
-
-		Family : Minecraftia
-
-		Designer : Andrew Tyler
-
-		Foundry : Andrew Tyler
-
-		Description : Cool Minecraft font !
-
-		Full Language Support:
-			Basic Latin, Euro, Western European
-
-*/
-
-/* ---------- (Start) Integrated CSS of Minecraft Font ---------- */
 	@font-face {
-		font-family: 'MinecraftiaRegular';						/* Name of the Font. Can be Customisable*/
-		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-family: 'Minecraftia', 'MCFont', 'MC';							/* Name of the Fonts. Can be Customisable. */
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');					/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
 
-	/* The following rules are deprecated. */ 	
-
-	@font-face {
-		font-family: 'Minecraftia';								/* Name of the Font. Can be Customisable*/
-		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
-		font-weight: normal;
-		font-style: normal;
+	.MCFont {
+		font-family: 'MCFont';
 	}
-/* ---------- (End) Integrated CSS of Minecraft Font ---------- */
 
-.MC {
-	font-family: 'Minecraftia';
-}
+/* ---------- (End) CSS of Minecraft Font ---------- */
+
+/* ---------- (Start) CSS of Minecraft Enchanting Table Font ---------- */
 
 	@font-face {
-		font-family: 'MC-Enchanting-Table';								/* Name of the Font. Can be Customisable*/
+		font-family: 'MCFont-Enchanting-Table', 'MC-Enchanting-Table', 'MCFont-E', 'MC-E';		/* Name of the Fonts. Can be Customisable. E for Enchanting Table */
 		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
 
-.MC-Enchanting-Table {
-	font-family: 'MC-Enchanting-Table';
-}
+	.MCFont-E {
+		font-family: 'MCFont-E';
+	}
+
+/* ---------- (End) CSS of Minecraft Enchanting Table Font ---------- */
+
+/* ---------- (Start) CSS of Minecraft Unicode Font ---------- */
+
+	@font-face {
+		font-family: 'MCFont-Unicode', 'MC-Unicode', 'MCFont-U', 'MC-U';				/* Name of the Fonts. Can be Customisable. U for  */
+		src: url('../fonts/minecraft-unicode.ttf') format('truetype');					/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.MCFont-U {
+		font-family: 'MCFont-U';
+	}
+
+/* ---------- (End) CSS of Minecraft Unicode Font ---------- */
+
 /* -----------------------------------
 	CSS Maded with ❤ by Chef Ui Chef
-	V1.2
-   ----------------------------------- */ 
+	V1.3
+   -----------------------------------
+
+
+		Credits :
+			- MinecraftiaRegular
+
+				Found at Fontlibrary.org (https://fontlibrary.org/en/font/minecraftia)
+				https://fontlibrary.org/face/minecraftia
+				Source of the Font : https://fontlibrary.org/assets/fonts/minecraftia/71962a7e3d4a70435c030466a12f1d63/bf3f245b7cd53caea0cb07d265a64adc/MinecraftiaRegular.ttf
+		
+				Category : Serif
+		
+				License : CC-BY-SA
+		
+				Family : Minecraftia
+		
+				Designer : Andrew Tyler
+		
+				Foundry : Andrew Tyler
+		
+				Description : Cool Minecraft font !
+		
+				Full Language Support:
+					Basic Latin, Euro, Western European
+
+			- minecraft-enchanting-table
+			- minecraft-unicode 
+
+*/
