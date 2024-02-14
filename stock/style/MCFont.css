@@ -1,12 +1,28 @@
 /* ---------- (Start) CSS of Minecraft Font ---------- */
 
 	@font-face {
-		font-family: 'Minecraftia'/*, 'MCFont', 'MC'*/;							/* Name of the Fonts. Can be Customisable. */
-		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');					/* Source of the .ttf (the Font format)*/
+		font-family: 'Minecraftia';						/* Name of the Fonts. Can be Customisable. */
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'MCFont';							/* Name of the Fonts. Can be Customisable. */
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
 
+		@font-face {
+		font-family: 'MC';							/* Name of the Fonts. Can be Customisable. */
+		src: url('../fonts/MinecraftiaRegular.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	/* Fonts usable for Minecraft Font : 'Minecraftia' , 'MCFont' , 'MC' */
+	
 	.MCFont {
 		font-family: 'MCFont';
 	}
@@ -16,12 +32,35 @@
 /* ---------- (Start) CSS of Minecraft Enchanting Table Font ---------- */
 
 	@font-face {
-		font-family: 'MCFont-Enchanting-Table'/*, 'MC-Enchanting-Table', 'MCFont-E', 'MC-E'*/;		/* Name of the Fonts. Can be Customisable. E for Enchanting Table */
+		font-family: 'MCFont-Enchanting-Table';					/* Name of the Fonts. Can be Customisable. */
 		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
-
+	
+	@font-face {
+		font-family: 'MC-Enchanting-Table';					/* Name of the Fonts. Can be Customisable. */
+		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'MCFont-E';						/* Name of the Fonts. Can be Customisable. E for Enchanting Table */
+		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'MC-E';							/* Name of the Fonts. Can be Customisable. E for Enchanting Table */
+		src: url('../fonts/minecraft-enchanting-table-font-by-DarkNight5047.ttf') format('truetype');	/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	/* Fonts usable for Minecraft Enchanting Table Font : 'MCFont-Enchanting-Table', 'MC-Enchanting-Table', 'MCFont-E' , 'MC-E' */
+	
 	.MCFont-E {
 		font-family: 'MCFont-E';
 	}
@@ -31,22 +70,45 @@
 /* ---------- (Start) CSS of Minecraft Unicode Font ---------- */
 
 	@font-face {
-		font-family: 'MCFont-Unicode'/*', MC-Unicode', 'MCFont-U', 'MC-U'*/;				/* Name of the Fonts. Can be Customisable. U for  */
-		src: url('../fonts/minecraft-unicode.ttf') format('truetype');					/* Source of the .ttf (the Font format)*/
+		font-family: 'MCFont-Unicode';						/* Name of the Font. Can be Customisable. */
+		src: url('../fonts/minecraft-unicode.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
 		font-weight: normal;
 		font-style: normal;
 	}
 
+	@font-face {
+		font-family: 'MC-Unicode';						/* Name of the Fonts. Can be Customisable. */
+		src: url('../fonts/minecraft-unicode.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: MCFont-U';							/* Name of the Fonts. Can be Customisable. U for Unicode  */
+		src: url('../fonts/minecraft-unicode.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'MC-U';							/* Name of the Fonts. Can be Customisable. U for Unicode  */
+		src: url('../fonts/minecraft-unicode.ttf') format('truetype');		/* Source of the .ttf (the Font format)*/
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	/* Fonts usable for Minecraft Regular Font : 'MCFont-Unicode', 'MC-Unicode', 'MCFont-U' , 'MC-U' */
+	
 	.MCFont-U {
 		font-family: 'MCFont-U';
 	}
 
 /* ---------- (End) CSS of Minecraft Unicode Font ---------- */
 
-/* -----------------------------------
+/*	-----------------------------------
 	CSS Maded with ❤ by Chef Ui Chef
 	V1.3
-   -----------------------------------
+	-----------------------------------
 
 
 		Credits :
