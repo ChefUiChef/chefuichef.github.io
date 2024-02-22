@@ -1,3 +1,18 @@
+/*
+--------------------------------------------------------------------------------------
+Tutorial for Beginners : How to add these fonts ?
+
+	Step 1 :Inside your HTML file, in <head></head> add this line :
+		<link rel="stylesheet" href="https://chefuichef.fr/stock/style/MCFont.css" type="text/css"/>
+
+	Step 2 : In your class (or basically in span, p, a, h1, etc... these things in CSS) where there is some text, you can add or modify this line :
+		font-family: 'MCFont';
+					*The MCFont can be changed to other font names, read the other fonts down below
+
+And it should be done, Congratulations !
+If you have any questions, you can contact me in contact@chefuichef.fr 😉
+--------------------------------------------------------------------------------------
+*/
 /* ---------- (Start) CSS of Minecraft Font ---------- */
 
 	@font-face {
@@ -107,7 +122,7 @@
 
 /*	-----------------------------------
 	CSS Maded with ❤ by Chef Ui Chef
-	V1.3
+	V1.4
 	-----------------------------------
 
 
