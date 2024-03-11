@@ -12,18 +12,21 @@
 			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 			
 			
-			social {
+			.social {
+				font {
+					font-size:24px;
+					}
 				span {
-					color : #ffffff; 
+					color:transparent;
 					font-family : arial;
 					transition-duration : 0.3s;
 				}
 				.fab {
-					color:transparent;
+				color:#000000;
 				}
 			}
 			body {
-				background-color:#202124;
+				background-color:#101114;
 				box-sizing: border-box;
 				color:#FFFFFF;
 				transition-duration:0.3s;
@@ -32,25 +35,27 @@
 				
 				.header {
 					align-items: center;
-					background-color: #303134;
+					background-color: #202124;
 					display: flex;
 					justify-content: space-between;
-					height:8vh;
-					padding: 0.5vh 2%;
-					margin:1vh 4%;
+					height:6vh;
+					padding: 0vh 22.5% 0vh 0%;
+					margin:2.5vh 20%;
 					border-radius:3vh;
 					transition-duration:0.3s;
 					
-					
+
 					h1 {
-					transition-duration:0.3s;
-					color: #5500F0;
-					font-family: "Pacifico", cursive;
-					font-size: 30px;
-					text-shadow:
-						0 0 7px #fff,
-						0 0 10px #fff,
-						0 0 21px #fff
+						transition-duration:0.3s;
+						
+						font-family: "Pacifico", cursive;
+						font-size: 26px;
+						text-shadow:none;
+						
+						a {
+							text-decoration:none;
+							color:transparent;
+						}
 					}
 					
 				}
@@ -92,12 +97,24 @@
 				margin:0vh 0%;
 				border-radius:0vh 0vh 3vh 3vh;
 				h1 {
-					color:transparent;
-					text-shadow:none;
+					color: #5500F0;
+					font-size: 30px;
+					text-shadow:
+						0 0 0px #5500F0,
+						0 0 7px #fff,
+						0 0 10px #fff,
+						0 0 21px #fff
+						
 				}
 				span {
-					color:transparent;
-					transition-duration:0.3s;
+					color : #ffffff; 
+					transition-duration : 0.3s;
+				}
+				.social {
+					font {
+						font-size:32px;
+						transition-duration:0.4s;
+					}
 				}
 			}
 				.content:hover {
@@ -105,14 +122,16 @@
 					transition-duration:0.5s;
 					height:89vh;
 				}
+				
+
 		</style>	<!-- ----------(End) Style ---------- -->
 	</head>
 	<body>
 		<div class="container">
 			<header class="header">					<!-- (Start) Top bar -->
-				<h1>Chef Ui Chef</h1>
+				<h1><a href="http://chefuichef.fr" >Chef Ui Chef</a></h1>
 				<div class="social" style="padding: 1em;">	<!-- (Start) Social Links -->
-					<font <a="" class="social" face="arial" size="4px"><span>I'm on :</span>
+					<font class="social"><span>I'm on :</span>
 						<a href="https://www.twitch.tv/chefuichef" target="_blank">
 							<i class="fa-twitch fab" style="color:#9047FF" title="Twitch"></i>
 						</a>
@@ -130,7 +149,7 @@
 				</div>						<!-- (End) Social Links -->
 			</header>						<!-- (End) Top bar -->
 			<main class="content">
-				<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/szvy8ZMMAmg" frameborder="0" allowfullscreen>
+				<iframe id="ytplayer" type="text/html" src="https://www.youtube-nocookie.com/embed/szvy8ZMMAmg" frameborder="0" allowfullscreen>
 			</main>
 		</div>
 	</body>
