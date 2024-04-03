@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/jpg" href="..\..\stock/chefuichefx128.ico">	<!-- Tab Icon -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VR Tracker🤫 - Chef Ui Chef</title>				<!-- Tab title -->
+		<!--<meta http-equiv="refresh" content="5"> <!-- Auto refresh, debug only. Remove the "<!--" in the beginning to make this work :) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
+		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+			
+			body {
+				background-color:#202124;
+				box-sizing: border-box;
+				color:#FFFFFF;
+				font-family: Arial;
+				margin: 0;
+			}
+			
+			li a {
+				color: #FFFFFF;
+				display: block;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+			
+			li a:hover:not(.active) {
+				background-color: #303134;
+				color: white;
+			}
+			
+			table {
+				border-collapse: collapse;
+				font-family: arial, sans-serif;
+				margin: 30px 0;
+				width: 100%;
+			}
+			
+			.container {
+				line-height: 150%;
+			}
+			
+			.Buttons {
+				font-family: sans-serif;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			td,
+			th {
+				border: 1px solid #666666;
+				padding: 8px;
+			}
+			
+			tr:nth-child(1) {
+				background-color: #404248;
+				color: white;
+			}
+			
+			.active {
+				background-color: #404144;
+				color: white;
+			}
+			
+			.content {
+				border-left: 1px solid #d4d4d4;
+				margin-left: 190px;
+				overflow: hidden;
+				padding: 2em;
+			}
+			
+			.fas {
+				display: block;
+				font-size: 35px;
+				text-align: center;
+			}
+			
+			.footer {
+				background-color: #9e3030;
+				color: white;
+				padding: 55px 20px;
+				text-align: center;
+			}
+			
+			.header {
+				align-items: center;
+				background-color: #303134;
+				display: flex;
+				justify-content: space-between;
+				padding: 15px;
+			}
+			
+			.header h1 {
+				color: #5500F0;
+				font-family: "Pacifico", cursive;
+				font-size: 30px;
+				text-shadow:
+					0 0 7px #fff,
+					0 0 10px #fff,
+					0 0 21px #fff
+			}
+			
+			.header .social a {
+				color: #222222;
+				padding: 0 5px;
+				text-decoration : none;
+			}
+			
+			.hide {
+				color:#FFFFFF;
+				text-decoration:none;
+			}
+			
+			.left {
+				float: left;
+				margin: 0;
+				padding: 1em;
+				width: 180px;
+			}
+			
+			.Tutorial {
+				width:1280px;
+				height:720px;
+				text-align:center;
+			}
+			.temp {
+				color:#606268;
+			}
+			
+			ul {
+				list-style-type:disc;
+			}
+			.link {
+				color:#0066CC;
+			}
+		</style>	<!-- ----------(End) Style ---------- -->
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">					<!-- (Start) Top bar -->
+				<h1>Chef Ui Chef</h1>
+				<div class="social" style="padding: 1em;">	<!-- (Start) Social Links -->
+					<font <a="" class="social" face="arial" size="4px"><span style="color:#ffffff" face="arial">I'm on :</span>
+						<a href="https://discord.gg/82cB9Zps7w" target="_blank">
+							<i class="fab fa-discord" style="color:#5865F2" title="This discord server (Not mine, TontonDemon's Discord server)"></i>
+						</a>
+						<a href="https://www.twitch.tv/chefuichef" target="_blank">
+							<i class="fab fa-twitch" style="color:#9047FF" title="Twitch"></i>
+						</a>
+						<a href="https://twitter.com/ChefUiChef" target="_blank">
+							<i class="fab fa-twitter" style="color:#00AEEF" title="Twitter, I'm not rt crazy stuff here"></i>
+						</a>
+						<a href="https://www.reddit.com/user/ChefUiChef" target="_blank">
+							<i class="fab fa-reddit" style="color:#FF4500" title="Reddit VERY ! very active here, I LIKE IT !"></i>
+						</a>
+						<a href="https://github.com/ChefUiChef" target="_blank">
+							<i class="fab fa-github" style="color:#1B1F23" title="Github well... I'm not using it so much"></i>
+						</a>
+						<i class="fab fa-tiktok" style="color:#404040" title="Tik... PRANK NOT TRUE ! I will never go here LMAO 🤣🤣🤣 (I like to know in advance the subject of what I'm going to watch) and YT Shorts counts too"></i>
+					</font>
+				</div>						<!-- (End) Social Links -->
+			</header>						<!-- (End) Top bar -->
+			<aside class="left">					<!-- (Start) Left bar -->
+				<img src="..\..\stock/chefuichef.jpg" width="160px">
+				<ul class="Buttons">						<!-- (Start) Interactive Buttons -->
+					<li>
+						<a href="..\">Homepage</a>
+					</li>
+					<li>
+						<a href="..\Contact">Contact</a>
+					</li>
+					<li>
+						<a href="https://scoresaber.com/u/76561198397022680" target="_blank">ScoreSaber</a>
+					</li>
+					<li>
+						<a href="https://www.beatleader.xyz/u/76561198397022680" target="_blank">BeatLeader</a>
+					</li>
+					<li>
+						<a class="active" href="..\en/VR_DIY_Tracker">DIY Tracker Project</a>
+					</li>
+				</ul>						<!-- (End) Interactive Buttons -->
+				<br>
+				<br>
+				<p>
+					...
+				</p>
+			</aside>						<!-- (End) Left bar -->
+			<main class="content">
+				<h1>The VR Tracker Project🤫</h1>
+				<span>Comes at the base of Millomaker BUT with my own additions and preferences</span>
+				<span>(That way I can teach you about my rookie mistakes too 😉)</span>
+				<br>
+				<span>Languages 🌍 -> <a class="link" href="..\..\7,jls)_(éQwO§²¤§" title="Loads the original / French version">[FR 🇫🇷]</a> <a class="link" href="..\VR_DIY_Tracker" title="You're already in ✅">[EN 🇬🇧]</a> (English WIP... some buttons can be broken)</span>
+				<hr>
+				<h2>The Tutorial</h2>
+				<span>To do this, I basically followed this tutorial (Thanks Millomaker if you go there ❤️)</span>
+				<center>
+					<iframe class="Tutorial" src="https://www.youtube-nocookie.com/embed/3K52qEGQP64" title="YouTube video player" frameborder="1" allowfullscreen="" allow="web-share"></iframe>
+				</center>
+				<h3>Some documentations</h3>
+				<a class="link" href="https://www.patreon.com/posts/86187423" target="_blank" title="Redirects to the Patreon post of Millomaker">Patreon post of Millomaker</a>
+				<br>
+				<a class="link" href="https://docs.slimevr.dev/index.html" target="_blank" title="Redirects to the SlimeVR Documentation">SlimeVR Documentation</a>
+				<hr>
+				<h2 title="The clickable on the table are in part affiliated with the links of Millomaker">The required components (for 8 Trackers) in part affiliated by Millomaker:</h2>
+				<table>
+					<tr>
+						<th>Name of the part</th>
+						<th>Option / "Color"</th>
+						<th>Quantity (For 1)</th>
+						<th>Price (For 1)</th>
+						<th>Quantity to take</th>
+						<th>Price (For all)</th>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://fr.aliexpress.com/item/32651747570.html" target="_blank" title="Click to be redirected to the part">Wemos D1 Mini Type C</a></td>
+						<td>D1 MINI TYPE-C</td>
+						<td>1</td>
+						<td>1,80€ + 1,31€</td>
+						<td>8</td>
+						<td>14,40€ + 2,28€</td>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://s.click.aliexpress.com/e/_DFgoyGV&v=3K52qEGQP64" target="_blank" title="Click to be redirected to the part">Battery LiPo 1800mah 804040</a></td>
+						<td>5pcs 2wires no plug</td>
+						<td>5</td>
+						<td>13,61€ + 5,40€</td>
+						<td>2</td>
+						<td>27,22€ + 9,00€</td>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://s.click.aliexpress.com/e/_Deytxc1&v=3K52qEGQP64" target="_blank" title="Click to be redirected to the part">Li-Ion charger/ Boost MH-CD42</a></td>
+						<td>2A 5V</td>
+						<td>1</td>
+						<td>1,06€ + 1,19€</td>
+						<td>8</td>
+						<td>8,48 + 4,08</td>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://s.click.aliexpress.com/e/_DDKcx1j&v=3K52qEGQP64" target="_blank" title="Click to be redirected to the part">Accelerometer BMI160</a></td>
+						<td>Khaki</td>
+						<td>1</td>
+						<td>1,57€ + 1,19€</td>
+						<td>8</td>
+						<td>12,56€ + 4,08€</td>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://s.click.aliexpress.com/e/_Dl1Sweh&v=3K52qEGQP64" target="_blank" title="Click to be redirected to the part">Wires</a></td>
+						<td>Black + Red (for each) Options: 5 Meters ; 32AWG</td>
+						<td>1</td>
+						<td>0,82€ + FREE</td>
+						<td>1 for each (2)</td>
+						<td>1,64€ + FREE</td>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://s.click.aliexpress.com/e/_DkZA3Zb&v=3K52qEGQP64" target="_blank" title="Click to be redirected to the part">Straps</a></td>
+						<td>38x300mm + 38x400mm + 38x600mm</td>
+						<td>2 or 5</td>
+						<td>-</td>
+						<td>2 for each exept 38x300mm (1 only)</td>
+						<td>10,14€ + 2,67€</td>
+					</tr>
+					<tr>
+						<td><a class="link" href="https://s.click.aliexpress.com/e/_DkDtEgd&v=3K52qEGQP64" target="_blank" title="Click to be redirected to the part">Screws</a></td>
+						<td>Your choice (Only the color changes)</td>
+						<td>1</td>
+						<td>5,16€ + FREE</td>
+						<td>1</td>
+						<td>5,16€ + FREE</td>
+					</tr>
+					<tr>
+						<th colspan="6">Total : 79,60€ + 22,11€ = 101,71€ (For the components) for 8 trackers (In France 🇫🇷)</th>
+					</tr>
+				</table>
+				<h4>Just a few points (that I think) are important to say :</h4>
+				<ul>
+					<li>⚠️ After, you need to print 3D parts so, if you have a 3D printer (or if you know someone who can print it for you) that's perfect 👌</li>
+					<li>
+						The Wemos D1 Mini don't have the same link as Millomaker despite the seller's pictures.
+					</li>
+					<a class="link" href="https://s.click.aliexpress.com/e/_DmIIdLP&v=3K52qEGQP64" target="_blank" title="Lien (Affilié) de Millomaker">(His link)</a>
+					<li>When I ordered with his link, I did not received the same part so, j'ai dû recommend elsewhere</li>
+					<a class="link" href="orders.png" title="Affiche une photo de comparaison entre les 2 commandes">(View photo)</a>
+					<li>The prices can (sometimes) according to your country and/or over the time (yeah that's stupid to say but I say it anyway 🙄)</li>
+					<li>For the Straps, I have choosed 8 because I thought that's the most optimal.
+					<li>Here's also where I plan to put the straps (as well as the trackers) :</li>
+				</ul>
+				<img src="assignments.png" width="33%" >
+				
+				<hr>
+				<h2>My setup</h2>
+				<span>Here, not so much to tell... but, here's what I would have recommended :</span>
+				<ul>
+					<li>A good-enough PC to start SteamVR without too much trouble</li>
+					<li>A wireless access point next to your PC
+					<br>I would recommend having your PC as an access point.
+					<br> or a router in the same room as your PC
+					<br>⚠️(avoild access points with a phone, trackers could disconnect sometimes, even close)</li>
+					<br>
+				</ul>
+				<hr>
+				<h2>The welding and assembly part</h2>
+				<span>So here, too lazy to explain the whole welding process for the moment...
+					<br>... But you can see the </span>
+				<a class="link" href="https://www.patreon.com/posts/86187423" target="_blank" title="Redirects to the Patreon post of Millomaker">Patreon post of Millomaker</a>
+				<span>for that</span>
+				<br>
+				<br>
+				<span>Here's also the 3D files to print, you can find it <a class="link" href="https://www.thingiverse.com/thing:6115611" target="_blank" title="3D case for the Tracker, designed by Milomaker">here</a></span>
+				<br>
+				<br>
+				<hr>
+				<h2>The Firmware</h2>
+				<span>So here, 2 methods :</span>
+				<h3>The simple method</h3>
+				<span>Here, The entire setup will be easy to understand and do. <a class="link" href="https://slimevr-firmware.bscotch.ca/ target="_blank" title="Online tool to upload code directly online">This online took</a> permits to upload code directly online.
+				<br>So, Ensure that you have connected your tracker to the PC and to have a compatible navigator (like Microsoft Edge)</span>
+				<br><span>After, Enter these parameters below and then, click on Continue</span>
+				<br>
+				<img src="firmware_parameters.png" width="40%">
+				<br>
+				<br>
+				<h3>The hard method</h3>
+				<span>For that, tou need to install a lot of softwares, everything is explained on <a class="link" href="https://docs.slimevr.dev/firmware/setup-and-install.html" target="_blank" title="Refers to part of the SlimeVR documentation">this documentation</a></span>
+				<br>
+				<br>
+				<br>
+				<hr>
+				<h2>The last steps</h2>
+				<span>To connect and set up your trackers, you need to install <a class="link" href="https://slimevr.dev/download" target="_blank" title="Downloads from slimevr.dev">SlimeVR Server</a> (Also avaiable on the SlimeVR documentation if you look hard enough)</span>
+				<br>
+				<span>After, open the software and if you you have not already set up your Wi-Fi network parameters,
+				<br>connect one-by-one your trackers to your PC and enter your Wi-Fi settings</span>
+				<br>
+				<br>
+				<br><span>Une fois le Wi-Fi de renseigné et vos trackers enfilés, il vous restera à calibrer la position de vos trackers.
+				<br>Allez dans "Mounting Calibration" dans la barre de gauche et puis, calibrez vos trackers</span>
+				<br>
+				<span>Si les trackers virtuels ne s'affichent pas sur SteamVR, c'est sûrement car des extensions sur SteamVR ne sont pas activées.
+				<br>Allez dans "Démarrage/arrêt" sur SteamVR et dans les les applis de l'overlay de démarrage, il faudra sélectionner "SlimeVR Feeder App"
+				<br>Vérifiez également dans les extensions, "slimevr" doit être activé.</span>
+				<br>
+				<h1>THE END, Congratulations ! 🥳🎉</h1>
+				<br>
+				<br>
+				<span class="temp">For any feedback or missing elements, you can contact me on <a href="mailto:contact@chefuichef.fr">contact@chefuichef.fr</a> 😉</span>
+			</main>
+			<div id="barre_fixe" style="position: fixed;bottom: 0;width: 100%;background: #9e3030;color: white;text-align: center;padding: 16px 0px;">
+				<p>
+					<font size="5" title="Objective zero cookies ! 🍪">Site still under development... (WIP)<a href="https://github.com/ChefUiChef/chefuichef.github.io/" target="_blank" title="Redirecting to the source code :)" class="hide">🍪</a></font>
+				</p>
+			</div>
+		</div>
+	<header class="header" style="height: 61px;"></header>
+	</body>
+</html>

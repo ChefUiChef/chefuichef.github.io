@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/jpg" href="/stock/chefuichef.jpg">	<!-- Tab Icon -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Clock</title>				<!-- Tab title -->
+		<link rel="stylesheet" href="https://chefuichef.fr/stock/style/MCFont.css" type="text/css"/>	<!-- New Style for Minecraft Font -->
+		<!-- (Start) Discord Embed -->
+		<meta content="Clock by Chef Ui Chef" property="og:title" />
+		<meta content="Read your current time in fullscreen !" property="og:description" />
+		<meta content="https://chefuichef.fr/" property="og:url" />
+		<meta content="chefuichef.fr/stock/chefuichef.jpg" property="og:image" />
+		<meta content="#000000" data-react-helmet="true" name="theme-color" />
+		<script>
+			function afficherHeure() {
+				var date = new Date();
+				var heures = date.getHours();
+				var minutes = date.getMinutes();
+				var secondes = date.getSeconds();
+				
+				// Ajoute un zéro devant les chiffres si nécessaire
+				heures = (heures < 10) ? "0" + heures : heures;
+				minutes = (minutes < 10) ? "0" + minutes : minutes;
+				secondes = (secondes < 10) ? "0" + secondes : secondes;
+				
+				var heureActuelle = heures + ":" + minutes + ":" + secondes;
+				
+				document.getElementById("heure").innerText = heureActuelle;
+				
+				setTimeout(afficherHeure, 1000); // Met à jour l'heure chaque seconde
+			}
+			// Appeler la fonction pour afficher l'heure dès que la page est chargée
+			window.onload = afficherHeure;
+		</script>
+		<style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            background-color: #000000;
+            font-family: "MC", Arial;
+            font-size: 19vw;
+		transition-duration:0.5s;
+        }
+
+        #heure {
+            text-shadow: 0.125em 0.125em 0 rgba(255, 255, 255, 0.25);
+        }
+    </style>
+	</head>
+	<body>
+		<div id="heure"></div>
+	</body>
+</html>
