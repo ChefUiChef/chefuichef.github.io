@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<!--
+	Hey ! do YOU want to add that font library ? You can go to https://chefuichef.fr/stock/style/MCFont.css and read the tutorial above 😉
+	-->
+	<head>
+		<link rel="icon" type="image/jpg" href="/stock/chefuichef.jpg">	<!-- Tab Icon -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MCFont by Chef Ui Chef</title>				<!-- Tab title -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
+		<!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>	<!-- Old Style for Minecraft Font -->
+		<link rel="stylesheet" href="https://chefuichef.fr/stock/style/MCFont.css" type="text/css"/>	<!-- New Style for Minecraft Font -->
+		<!-- (Start) Discord Embed -->
+		<meta content="MCFont by Chef Ui Chef" property="og:title" />
+		<meta content="Create your Minecraft text simply by writing it !" property="og:description" />
+		<meta content="https://chefuichef.fr/" property="og:url" />
+		<meta content="chefuichef.fr/stock/chefuichef.jpg" property="og:image" />
+		<meta content="#80ff80" data-react-helmet="true" name="theme-color" />
+		<!-- (End) Discord Embed -->
+		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
+<style>
+			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");				/* Style for Chef Ui Chef*/
+			@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Pixelify+Sans&display=swap');	/* Old style for minecraft Font*/
+			
+			body {
+				background-color:#202124;
+				box-sizing: border-box;
+				color:#FFFFFF;
+				font-family: Arial;
+				margin: 0;
+			}
+			
+			.container {
+				height: 100vh;
+			}
+			
+			.content {
+				height:92vh;
+				overflow: hidden;
+				padding: 0em;
+			}
+			
+			.content textarea{
+				background-color:transparent;
+				border-color:transparent;
+				width:100%;
+				height:100vh;
+				color:#FFFFFF;
+				text-align:center;
+				font-family: 'Minecraftia', sans-serif;		/* Minecraft font selected*/
+				text-shadow:
+					5px 5px 0px #000000,
+					10px 10px 0px #000000;
+				font-size:500%;
+			}
+			
+			.header {
+				align-items: center;
+				background-color: #303134;
+				display: flex;
+				justify-content: space-between;
+				padding: 1vh;
+				height:6vh;
+			}
+			
+			.header h1 {
+				color: #F4F451;
+				font-family: 'Minecraftia', sans-serif;		/* Minecraft font selected*/
+				<!--font-family: "Pacifico", cursive;-->
+				font-size: 30px;
+				position:relative;
+				text-align:right;
+				text-shadow:
+					1px 1px 0px #000000,
+					2px 2px 0px #000000,
+					3px 3px 0px #000000,
+					4px 4px 0px #000000;
+				transition-duration:0.3s;
+			}
+			
+			.header h1:hover {
+				color: #F4F451;
+				font-family: 'Minecraftia', sans-serif;
+				<!--font-family: "Pacifico", cursive;-->
+				font-size: 48px;
+				position:relative;
+				text-align:right;
+				text-shadow:
+					1px 1px 0px #000000,
+					2px 2px 0px #000000,
+					3px 3px 0px #000000,
+					4px 4px 0px #000000,
+					2px 2px 6px #ffffff,
+					2px 2px 12px #ffffff,
+					2px 2px 24px #ffffff,
+					2px 2px 32px #ffffff;
+				transition-duration:0.3s;
+			}
+			
+			.header .social a {
+				color: #FFFFFF;
+				padding: 0 5px;
+				text-decoration : none;
+			}
+			
+			.hide {
+				color:#FFFFFF;
+				text-decoration:none;
+			}
+			
+			.img {
+			position:relative;
+			width: 64px;
+			transition-duration:0.3s;
+			}
+			
+			.img:hover {
+			position:relative;
+			width: 48px;
+			transition-duration:0.3s;
+			}
+			.mcfont{					/* Minecraft font */
+				font-family: 'Minecraftia';
+				text-shadow:
+					1px 1px 0px #000000,
+					2px 2px 0px #000000;
+			}
+			
+			.social {
+				padding-right:1em;
+			}
+			
+</style>	<!-- ----------(End) Style ---------- -->
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">					<!-- (Start) Top bar -->
+			<a href="..\">
+				<img class="img" src="..\stock/chefuichef.jpg">
+			</a>
+				<h1>MCFont</h1>
+				<div class="social">	<!-- (Start) Social Links -->
+					<!--<font>--> <a class="social" size="4px"><span class="mcfont">Je suis sur : </span>
+						<a href="https://discord.gg/82cB9Zps7w" target="_blank">
+							<i class="fab fa-discord" style="color:#5865F2" title="Ce serveur discord (pas le mien, celui de TontonDemon)"></i>
+						</a>
+						<a href="https://www.twitch.tv/chefuichef" target="_blank">
+							<i class="fab fa-twitch" style="color:#9047FF" title="Twitch"></i>
+						</a>
+						<a href="https://twitter.com/ChefUiChef" target="_blank">
+							<i class="fab fa-twitter" style="color:#00AEEF" title="Twitter, je rt un pas des trucs de fou ici"></i>
+						</a>
+						<a href="https://www.reddit.com/user/ChefUiChef" target="_blank">
+							<i class="fab fa-reddit" style="color:#FF4500" title="Reddit TRES ! très actif dessus, J'ADORE !"></i>
+						</a>
+						<a href="https://github.com/ChefUiChef" target="_blank">
+							<i class="fab fa-github" style="color:#1B1F23" title="Github bon j'utilise pas trop"></i>
+						</a>
+						<a>
+							<i class="fab fa-tiktok" style="color:#404040" title="Tik... PRANK C FO ! J'irais jamais dedans MDRRR 🤣🤣🤣 (j'aime bien savoir par avance le sujet que je vais regarder) donc YT Shorts sa compte aussi"></i>
+						</a>
+					<!--</font>-->
+				</div>						<!-- (End) Social Links -->
+			</header>						<!-- (End) Top bar -->
+			<div class="content">
+				<textarea placeholder="Now Patched !"></textarea>
+			</div>
+		</div>
+	</body>
+</html>
