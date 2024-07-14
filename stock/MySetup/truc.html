@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dégradé interactif</title>
+		<style>
+			html{
+				background:transparent;
+			}
+			div {
+				width:500px;
+				height:500px;
+				margin: 50px auto 20px;
+				border-radius:5px;
+				
+				background-color:deeppink;
+				background-image:linear-gradient(white,rgba(255,255,255,0));
+				transition:background-color 1s;
+				
+				box-shadow:0 0 5px black;
+			}
+			
+			div:hover,div.on {
+				background-color: steelblue;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div"></div>
+	</body>
+</html>

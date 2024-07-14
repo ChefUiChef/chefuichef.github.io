@@ -1,0 +1,118 @@
+#####################################
+#   Titre : Cryptage et Decryptage  #
+#   Par : Alphonse Dubois           #
+#   Date : 19/02/1994 10:11         #
+#   Version : 1.5                   #
+#####################################
+# (Not) Copyrighted © 1961-1994 chefuichef.skyblog.me
+
+import sys                              # Librairie pour fermer le programme en cas de faute de saisie
+res2 = ""
+anwser = ""
+print("Cryptage et Decryptage de mot par une cle")
+print("Choisissez entre le Cryptage et le Decryptage")  # Demande a l utilisateur entre le cryptage et le decryptage
+answer = input("1 = Cryptage ; 2 = Decryptage")
+
+if answer != "1" and answer != "2":     # (Debut) Ferme le programme si erreur de saisie
+    print("Numero incorrect, fermeture...")
+    sys.exit()                                          
+                                        # (Fin) Ferme le programme si erreur de saisie
+print("")
+
+mot = input("Entrez un mot : ")         # Demander à l'utilisateur d'entrer un mot
+print("")
+cle = input("Entrez la cle : ")         # Demander à l'utilisateur d'entrer une cle 
+
+"""
+mot = "YAZPYHJAETJJMGUER"               # Debug : Mot predefini
+cle = "Magique"                         # Debug : Cle predefini
+"""
+
+print("")
+print("")
+
+while len(cle) < len(mot):
+    cle = cle + cle                         # Repetition de la cle jusqua que la cle soit + grand que mot
+
+for i in range(len(mot)):               # (Debut) Parcourir chaque caractere du mot
+    char_mot = mot[i]                       # Determiner la valeur ASCII du mot
+    char_cle = cle[i]                       # Determiner la valeur ASCII de la cle
+                                        # (Fin) Parcourir chaque caractere du mot
+    # Afficher et rentrer dans une variable le caractere et sa valeur ASCII
+    if 65 <= ord(char_mot) <= 90:           # (Debut) Determiner si le caractere est en MAJUSCULE
+        #print("MAJ")
+        print(f"Mot : Caractere '{char_mot}' valeur ASCII {ord(char_mot)} soit {ord(char_mot)-64}")
+        tmot = ord(char_mot)-64
+        m = 0                               # (Fin) Determiner si le caractere est en MAJUSCULE
+        
+    elif 97 <= ord(char_mot) <= 122:        # (Debut) Determiner si le caractere est en minuscule
+        #print("min")
+        print(f"Mot : Caractere '{char_mot}' valeur ASCII {ord(char_mot)} soit {ord(char_mot)-96}")
+        tmot = ord(char_mot)-96
+        m = 1                               # (Fin) Determiner si le caractere est en minuscule
+        
+    else:                                   # (Debut) Determiner si cest un autre caractere
+        #print("Unknown.")
+        print(f"Mot : Caractere '{char_mot}' valeur ASCII {ord(char_mot)}")
+        tmot = ord(char_mot)
+        m = 2                               # (Fin) Determiner si cest un autre caractere
+        
+        
+    # Determiner la valeur ASCII de la cle
+    if 65 <= ord(char_cle) <= 90:           # (Debut) Determiner si le caractere est en majuscule
+        #print("MAJ")
+        print(f"Cle : Caractere '{char_cle}' valeur ASCII {ord(char_cle)} soit {ord(char_cle)-64}")
+        tcle = ord(char_cle)-64             # (Fin) Determiner si le caractere est en majuscule
+        
+    elif 97 <= ord(char_cle) <= 122:        # (Debut) Determiner si le caractere est en minuscule
+        #print("min")
+        print(f"Cle : Caractere '{char_cle}' valeur ASCII {ord(char_cle)} soit {ord(char_cle)-96}")
+        tcle = ord(char_cle)-96             # (Fin) Determiner si le caractere est en minuscule
+        
+    else:                                   # (Debut) Determiner si cest un autre caractere
+        #print("Unknown.")
+        print(f"Cle : Caractere '{char_cle}' valeur ASCII {ord(char_cle)}")
+        tcle = 1                            # (Fin) Determiner si cest un autre caractere
+        # La cle quand cest un autre caractere que des lettres ne vaut rien si cest pas une lettre
+        
+    temp = tmot - tcle                                          # Determiner le decallage du mot et de la cle
+    print("Decallage de",temp)
+    if answer == "1":                                           # (Debut) Si option Cryptage choisie
+        if m == 0:                                                  # Si le caractere est en MAJUSCULE
+            if 63 + tmot + tcle > 90 :
+                res = res2 + chr(63 - 26 + (tmot) + (tcle))
+            else:
+                res = res2 + chr(63 + (tmot) + (tcle))
+        elif m == 1:                                                # Si le caractere est en minuscule
+            if 63 + tmot + tcle > 90 :                                  # Si le mot et la cle depasse lalphabet en avancant:
+                res = res2 + chr(63 - 26 + 32 + (tmot) + (tcle))
+            else:
+                res = res2 + chr(63 + 32 + (tmot) + (tcle))
+        else:                                                       # Si c est un autre caractere:
+            res = res2 + chr(tmot)                                      # laisser le caractere tel qu elle
+    else:                                                       # (Fin) Si option Cryptage choisie
+                                                                # (Debut) Si option Decryptage choisie
+        if m==0:                                                    # (Debut) Si le caractere est en MAJUSCULE
+            if tmot - tcle < 0 :                                        # Si le mot et la cle depasse lalphabet en reculant:
+                res = res2 + chr(65 + 26 + (tmot) - (tcle))
+            else:
+                res = res2 + chr(65 + (tmot) - (tcle))
+        elif m== 1:                                                 # Si le caractere est en minuscule
+            if tmot - tcle < 0 :                                        # Si le mot et la cle depasse lalphabet en reculant:
+                res = res2 + chr(65 + 26 + 32 + (tmot) - (tcle))
+            else:
+                res = res2 + chr(65 + 32 + (tmot) - (tcle))
+        else:                                                       # Si c est un autre caractere:
+            res = res2 + chr(tmot)                                      # Si le caractere n est pas une lettre laisser tel qu elle
+                                                                # (Fin) Si option Decryptage choisie
+    res2 = res
+    print("")
+    
+print("------------------------------------------")
+print("Cle : ",cle)         # Debug : Affichage de la cle
+print("Mot : ",mot)         # Debug : Affichage du mot
+print("Resultat : ",res)    # Debug : Affichage du résultat
+print("------------------------------------------")
+print("v1.5")
+
+# Note : L'IA était totalement inutile dans cet exercice, seulement utile a trouver des fonctions
