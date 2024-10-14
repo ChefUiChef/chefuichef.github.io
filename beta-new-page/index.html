@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/jpg" href="/stock/chefuichefx128.ico">	<!-- Tab Icon -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>About chefuichef [WIP]</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body, html {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Arial, sans-serif;
+		}
+
+		html {
+			background-image: url('BG.png'); /* Chemin de l'image */
+			background-repeat: repeat; /* Répète l'image */
+			animation: moveDiagonal 3s linear infinite; /* Animation infinie */
+		}
+
+		.main-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			width: 90%;
+			max-width: 1200px;
+			height: 80%;
+			background-color: #00000000;
+			padding: 20px;
+		}
+
+		.image {
+			flex: 1;
+			text-align: center;
+			min-width: 300px; /* Taille minimale de l'image */
+			box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
+		}
+
+			.image img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				min-width: 300px;
+			}
+
+		.links {
+			width: 250px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		.link-box {
+			display: flex;
+			align-items: center;
+			background-color: #007BFF00;
+			border: 2px solid #FFFFFF;
+			border-radius: 16px;
+			color: #FFFFFF;
+			margin-bottom: 15px;
+			min-width: 256px;
+			padding: 10px;
+			text-decoration: none;
+			/*transition: background-color 0.3s ease;*/
+			transition-duration: 0.3s;
+			box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+		}
+
+			.link-box:hover {
+				background-color: #222222;
+				box-shadow: 0 0 16px 4px rgba(255, 255, 255, 0.5), 0 0 128px 4px rgba(255, 255, 255, 0.3);
+				transition-duration: 0.3s;
+			}
+
+			.link-box i {
+				margin-right: 10px;
+				font-size: 24px;
+			}
+
+		.link-text {
+			font-size: 24px;
+			flex: 1;
+		}
+
+		.twitch-button {
+			border-color: #8800FF;
+			/*linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1); /* Dégradé de la bordure */
+		}
+
+		.reddit-button {
+			border-color: #FF4500;
+		}
+
+		@keyframes moveDiagonal {
+			0% {
+				background-position: 0 0; /* Position initiale */
+			}
+
+			100% {
+				background-position: -1080px -1080px; /* Se déplace en diagonale */
+			}
+		}
+	</style>
+	<!-- Style pour mobile -->
+	<style>
+		/* Media query pour les petits écrans */
+		@media (max-width: 768px) {
+
+			html {
+				animation: moveDiagonal 5s linear infinite; /* Animation infinie */
+			}
+
+			.main-container {
+				flex-direction: column; /* Les liens passent en dessous de l'image */
+				height: auto; /* La hauteur s'adapte au contenu */
+			}
+
+			.image, .links {
+				width: 100%; /* Les éléments prennent toute la largeur de l'écran */
+				text-align: center;
+			}
+
+			.links {
+				padding: 10px 0; /* Moins d'espace sur les petits écrans */
+			}
+
+			.link-box {
+				justify-content: center;
+			}
+		}
+	</style>
+</head>
+	<body>
+		<div class="main-container"><!---->
+			<div class="image">
+				<img src="https://chefuichef.fr/stock/chefuichef.jpg" alt="Image centrale">
+			</div>
+			<div class="links">
+				<a href="https://chefuichef.fr" class="link-box website-button">
+					<i class="fas fa-home"></i> <!-- Icône à gauche -->
+					<span class="link-text">Mon site</span>
+				</a>
+				
+				<a href="https://github.com/ChefUiChef" class="link-box github-button">
+					<i class="fab fa-github"></i> <!-- Icône à gauche -->
+					<span class="link-text">GitHub</span>
+				</a>
+				
+				<a href="https://www.reddit.com/user/ChefUiChef" class="link-box reddit-button">
+					<i class="fab fa-reddit"></i> <!-- Icône à gauche -->
+					<span class="link-text">Reddit</span>
+				</a>
+				
+				<a href="#" class="link-box steam-button">
+					<i class="fab fa-steam"></i> <!-- Icône à gauche -->
+					<span class="link-text">Steam</span>
+				</a>
+				
+				<a href="https://www.twitch.tv/chefuichef" class="link-box twitch-button">
+					<i class="fab fa-twitch"></i> <!-- Icône à gauche -->
+					<span class="link-text">Twitch</span>
+				</a>
+				
+			</div>
+		</div><!---->
+	</body>
+</html>
