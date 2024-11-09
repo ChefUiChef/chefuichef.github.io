@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement...</title>
+	<script src="textList.js"></script>
+    <style>
+        body {
+			background-color:#000000;
+			font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+			width:100vw;
+			margin: 0;
+			color:#FFFFFF;
+			text-align:center;
+		}
+        #randomText {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin: 20px 0;
+        }
+
+		.loading-div {
+		width:100vw;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		text-align:center;
+		}<!---->
+		
+		span {
+			font-size:32px;
+		}
+		.progress-container {
+            width: 80%;
+            background-color: #ddd;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+        .progress-bar {
+            height: 30px;
+            background-color: #4caf50;
+            width: 0%;
+            border-radius: 25px;
+            transition: width 0.2s;
+        }
+        .progress-text, .speed-text {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div id="randomText">Chargement d'un texte aléatoire...</div>
+	<!-- -->
+	<span id="randomText">...</span>
+	<div class="loading-div"><!---->
+	<div class="progress-text" id="progress-text">0%</div>
+    <div class="progress-container">
+		<div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div class="speed-text" id="speed-text">0 Ko / 647.84 Ko</div>
+	</div>
+    <script>
+        // Fonction pour afficher un texte aléatoire
+        function loadRandomText() {
+            const randomIndex = Math.floor(Math.random() * textList.length);
+            const randomText = textList[randomIndex];
+            document.getElementById('randomText').innerText = randomText;
+        }
+
+        // Appeler la fonction une seule fois dès que la page est chargée
+        window.onload = loadRandomText;
+    </script>
+	 <script>
+        function simulateLoading() {
+            const totalSize = 647.84; // Taille totale en Ko
+            let progressBar = document.getElementById('progress-bar');
+            let progressText = document.getElementById('progress-text');
+            let speedText = document.getElementById('speed-text');
+            let progress = 0;
+            let loadedSize = 0;
+			let isReachedSlowness = false;
+
+            function updateProgress() {
+                let increment;
+                if (progress < 80) {
+                    // Simulation de progression normale avec micro-arrêts
+                    increment = Math.random() * 5; 
+                } else {
+                    // Ralentissement significatif après 80%
+                    increment = Math.random() * 1; 
+                }
+
+                progress += increment;
+                progress = Math.min(progress, 100); 
+                loadedSize = (progress / 100) * totalSize;
+
+                // Application de la progression
+                progressBar.style.width = progress + '%';
+                progressText.innerText = Math.round(progress) + '%';
+                speedText.innerText = loadedSize.toFixed(2) + ' Ko / ' + totalSize + ' Ko';
+
+                // Micro-arrêts aléatoires
+                let delay = 200 + Math.random() * 500; 
+
+                // Ralentissements plus fréquents après 80%
+                if (progress >= 80) {
+                    delay += 500;
+                }
+
+                if (progress < 100) {
+                    setTimeout(updateProgress, delay);
+                } else {
+                    // Déclenchement de l'événement de fin de chargement
+					speedText.innerText = loadedSize.toFixed(2) + ' Ko / ' + totalSize + ' Ko';
+                    onLoadingComplete();
+                }
+            }
+
+            updateProgress();
+        }
+
+        function onLoadingComplete() {
+            alert('Le chargement est terminé ! mais... les derniers paquets de téléchargements sont manquants... faut tout recommencer... 😥');
+			alert('LOL jrigole 🤣🤣🤣 jte le charge frérot, viens chatter sur MSN Messenger et mater des profils skyblog avec moi 😎');
+			window.location.href = 'https://bestsiteever.chefuichef.fr/fumo';
+            // Vous pouvez ici ajouter tout autre code que vous souhaitez exécuter après le chargement.
+        }
+
+        // Démarre la simulation du chargement
+        simulateLoading();
+    </script>
+
+</body>
+</html>
