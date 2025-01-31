@@ -1,232 +1,184 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-		<link rel="icon" type="image/jpg" href="/stock/chefuichefx128.ico">	<!-- Tab Icon -->
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Site de Chef Ui Chef</title>				<!-- Tab title -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
-		<!-- (Start) Discord Embed -->
-		<meta content="Site de Chef Ui Chef" property="og:title">
-		<meta content="Bienvenue dans le site de Chef Ui Chef !" property="og:description">
-		<meta content="https://chefuichef.fr/" property="og:url">
-		<meta content="stock/chefuichef.jpg" property="og:image">
-		<meta content="#400080" data-react-helmet="true" name="theme-color">
-		<!-- (End) Discord Embed -->
-		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
-<style>
-			@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-			
-			body {
-				background-color:#202124;
-				box-sizing: border-box;
-				color:#FFFFFF;
-				font-family: Arial;
-				margin: 0;
-				
-				.container {
-					line-height: 150%;
-					
-					.header {
-						align-items: center;
-						background-color: #303134;
-						display: flex;
-						justify-content: space-between;
-						padding: 15px;
-						
-						.fa-instagram {
-							color:#FFFFFF;
-							border-radius:4px;
-							transition-duration:0.3s;
-						}
-						.fa-instagram:hover {
-							background: linear-gradient(45deg, #FFD420 20%, #F30005 50%, #B900B3 80%);padding:2px 4px 2px 2px;
-							transition-duration:0.3s;
-						}
-						
-						h1 {
-							color: #5500F0;
-							font-family: "Pacifico", cursive;
-							font-size: 30px;
-							text-shadow:
-								0 0 7px #fff,
-								0 0 10px #fff,
-								0 0 21px #fff
-						}
-					}
-					.header .social a {
-						color: #222222;
-						padding: 0 5px;
-						text-decoration : none;
-					}
-					
-					
-					.left {
-						float: left;
-						margin: 0;
-						
-						.IMG {
-							display:block;
-							width:171px;
-							margin:10px 10px 16px 10px;
-						}
-						
-						.menu {
-							font-family: sans-serif;
-							list-style-type: none;
-							margin: 0;
-							padding: 0;
-							
-							li:first-child {
-								border-top-left-radius: 0.5em;
-								border-top-right-radius: 0.5em;
-							}
-							
-							li:last-child {
-								border-bottom-left-radius: 0.5em;
-								border-bottom-right-radius: 0.5em;
-							}
-							
-							li {
-								background-color:#303134;
-								margin:0 10px 0 10px;
-								
-								a {
-									color: #FFFFFF;
-									display: block;
-									padding: 8px 16px;
-									text-decoration: none;
-									transition-duration:0.3s;
-								}
-								
-								.active {
-									background-color: #404144;
-									color: white;
-									border-radius:0.5em;
-								}
-							}
-							li a:hover:not(.active) {
-								background-color: #353637;
-								color: white;
-								transition-duration:0.3s;
-							}
-						}
-					}
-					
-					.content {
-						border-left: 1px solid #d4d4d4;
-						margin-left: 190px;
-						overflow: hidden;
-						padding: 1em;
-						min-height: calc(100vh - 126px);
-					}
-				}
-			}
-			
-			
-			
-			table {
-				border-collapse: collapse;
-				font-family: arial, sans-serif;
-				margin: 30px 0;
-				width: 100%;
-				
-				tr:nth-child(1) {
-					background-color: #84e4e2;
-					color: white;
-				}
-				
-				td, th {
-					border: 1px solid #dddddd;
-					padding: 8px;
-				}
-			}
-					
-			.hide {
-				color:#FFFFFF;
-				text-decoration:none;
-			}
-			
-			#ytplayer {
-				width: 640px;
-				height: 360px;
-				frameborder: 0;
-				border-radius:24px;
-				text-align:center;
-				border-width:2px;
-				
-			}
-</style>
-	</head>
-	<body>
-		<div class="container">
-			<header class="header">					<!-- (Start) Top bar -->
-				<h1>Chef Ui Chef</h1>
-				<div class="social" style="padding: 1em;">	<!-- (Start) Social Links -->
-					<font <a="" class="social" size="4px"><span>Je suis sur :</span>
-						<a href="https://discord.gg/82cB9Zps7w" target="_blank">
-							<i class="fab fa-discord" style="color:#5865F2" title="Ce serveur discord (pas le mien, celui de TontonDemon)"></i>
-						</a>
-						<a href="https://www.twitch.tv/chefuichef" target="_blank">
-							<i class="fab fa-twitch" style="color:#9047FF" title="Twitch"></i>
-						</a>
-						<a href="https://twitter.com/ChefUiChef" target="_blank">
-							<i class="fab fa-twitter" style="color:#00AEEF" title="Twitter, je rt un pas des trucs de fou ici"></i>
-						</a>
-						<a href="https://www.reddit.com/user/ChefUiChef" target="_blank">
-							<i class="fab fa-reddit" style="color:#FF4500" title="Reddit TRES ! très actif dessus, J'ADORE !"></i>
-						</a>
-						<a href="https://github.com/ChefUiChef" target="_blank">
-							<i class="fab fa-github" style="color:#1B1F23" title="Github bon j'utilise pas trop"></i>
-						</a>
-						<i class="fab fa-tiktok" style="color:#404040" title="Tik... PRANK C FO ! J'irais jamais dedans MDRRR 🤣🤣🤣 (j'aime bien savoir par avance le sujet que je vais regarder) donc YT Shorts sa compte aussi"></i>
-						
-						<a href="https://instagram.com/ChefUiChef" target="_blank">
-							<i class="fab fa-instagram" title="Compte mort depuis sa création"></i>
-						</a>
-					</font>
-				</div>						<!-- (End) Social Links -->
-			</header>						<!-- (End) Top bar -->
-			<aside class="left">					<!-- (Start) Left bar -->
-				<img class="IMG" src="/stock/chefuichef.jpg">
-				<ul class="menu">						<!-- (Start) Interactive Buttons -->
-					<li>
-						<a class="active" href="..\">Accueil</a>
-					</li>
-					<li>
-						<a href="/Contact">Contact</a>
-					</li>
-					<li>
-						<a href="/Monsetup">Mon Setup</a>
-					</li>
-					<li>
-						<a href="https://scoresaber.com/u/76561198397022680" target="_blank">ScoreSaber</a>
-					</li>
-					<li>
-						<a href="https://www.beatleader.xyz/u/76561198397022680" target="_blank">BeatLeader</a>
-					</li>
-					<li>
-						<a href="7,jls)_(éQwO§²¤§">DIY Tracker Project</a>
-					</li>
-				</ul>						<!-- (End) Interactive Buttons -->
-			</aside>						<!-- (End) Left bar -->
-			<main class="content">
-				<h2>A propos</h2>
-				<p>Chef Ui Chef, Alias CHIEF pour certains. Gamer depuis tout jeune, surtout sur PC et PCVR... J'aime les PC ! jamais trop touché aux consoles par contre... sauf la Switch. j'aime aussi regarder le code source sur divers plugins</p>
-				<h2>Qui suis-je ?</h2>
-				<p>Un modo discord de <a href="https://discord.gg/tontondemon" target="_blank" title="Discord de 😈 TONTON DΣMOИ™ (mon lien d'invitation de soutien est en haut sur l'icon Discord)">TontonDemon</a> et vive la salade de pomme de terre ! 🥗🥔<a href="https://discord.gg/svpTmZfbxr" target="_blank" title="discord de titiodu64 :)" class="hide">.</a></p>
-				<hr>
-				<a href="https://www.death-clock.org">
-					<img src="https://www.death-clock.org/death-clock-badge1.php?dod=Friday, 1st August&amp;yod=2087&amp;aod=Age 82" alt="Death Clock.org Calculator Results" width="220" height="180" border="0">
-				</a>
-				<iframe id="ytplayer" type="text/html" src="https://www.youtube-nocookie.com/embed/82FgR0Pp6vU?rel=0" frameborder="0" allowfullscreen>
-			</main>
-			<div id="barre_fixe" style="position: fixed;bottom: 0;width: 100%;background: #9e3030;color: white;text-align: center;padding: 32px 0px;">
-				<p>
-					<font size="5" title="Objectif zéro cookies ! 🍪">Site encore sous développement... (WIP)<a href="https://github.com/ChefUiChef/chefuichef.github.io/" target="_blank" title="Redirection vers le code source :)" class="hide">🍪</a></font>
-				</p>
-			</div>
-		</div>
-	
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/jpg" href="/stock/chefuichefx128.ico">	<!-- Tab Icon -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>About chefuichef [WIP]</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-</body></html>
+		body, html {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Arial, sans-serif;
+		}
+
+		html {
+			background-image: url('BG.png'); /* Chemin de l'image */
+			background-repeat: repeat; /* Répète l'image */
+			animation: moveDiagonal 3s linear infinite; /* Animation infinie */
+		}
+
+		.main-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			width: 90%;
+			max-width: 1200px;
+			height: 80%;
+			background-color: #00000000;
+			padding: 20px;
+		}
+
+		.image {
+			flex: 1;
+			text-align: center;
+			min-width: 300px; /* Taille minimale de l'image */
+		}
+
+			.image img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				min-width: 300px;
+				box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+			}
+
+		.links {
+			width: 250px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		.link-box {
+			display: flex;
+			align-items: center;
+			background-color: #007BFF00;
+			border: 2px solid #FFFFFF;
+			border-radius: 16px;
+			color: #FFFFFF;
+			margin-bottom: 15px;
+			min-width: 256px;
+			padding: 10px;
+			text-decoration: none;
+			/*transition: background-color 0.3s ease;*/
+			transition-duration: 0.3s;
+			box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3);
+		}
+
+			.link-box:hover {
+				background-color: #222222;
+				box-shadow: 0 0 16px 4px rgba(255, 255, 255, 0.5), 0 0 128px 4px rgba(255, 255, 255, 0.3);
+				transition-duration: 0.3s;
+			}
+
+			.link-box i {
+				margin-right: 10px;
+				font-size: 24px;
+			}
+
+		.link-text {
+			font-size: 24px;
+			flex: 1;
+		}
+
+		.twitch-button {
+			border-color: #8800FF;
+			/*linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1); /* Dégradé de la bordure */
+		}
+
+		.reddit-button {
+			border-color: #FF4500;
+		}
+
+		@keyframes moveDiagonal {
+			0% {
+				background-position: 0 0; /* Position initiale */
+			}
+
+			100% {
+				background-position: -1080px -1080px; /* Se déplace en diagonale */
+			}
+		}
+	</style>
+	<!-- Style pour mobile -->
+	<style>
+		/* Media query pour les petits écrans */
+		@media (max-width: 768px) {
+
+			html {
+				animation: moveDiagonal 5s linear infinite; /* Animation infinie */
+			}
+
+			.main-container {
+				flex-direction: column; /* Les liens passent en dessous de l'image */
+				height: auto; /* La hauteur s'adapte au contenu */
+				margin-top: 64px;
+			}
+
+			.image, .links {
+				width: 100%; /* Les éléments prennent toute la largeur de l'écran */
+				text-align: center;
+				
+			}
+
+			.links {
+				padding: 10px 0; /* Moins d'espace sur les petits écrans */
+			}
+
+			.link-box {
+				justify-content: center;
+			}
+		}
+	</style>
+</head>
+	<body>
+		<div class="main-container"><!---->
+			<div class="image">
+				<img src="https://chefuichef.fr/stock/chefuichef.jpg" alt="Image centrale">
+			</div>
+			<div class="links">
+				<a href="/Landing.html" class="link-box website-button">
+					<i class="fas fa-home"></i> <!-- Icône à gauche -->
+					<span class="link-text">Mon site [WIP]</span>
+				</a>
+
+				<a href="/Monsetup" class="link-box setup-button">
+					<span class="link-text">Mon Setup</span>
+				</a>
+				
+				<a href="https://github.com/ChefUiChef" class="link-box github-button">
+					<i class="fab fa-github"></i> <!-- Icône à gauche -->
+					<span class="link-text">GitHub</span>
+				</a>
+				
+				<a href="https://www.reddit.com/user/ChefUiChef" class="link-box reddit-button">
+					<i class="fab fa-reddit"></i> <!-- Icône à gauche -->
+					<span class="link-text">Reddit</span>
+				</a>
+				
+				<a href="#" class="link-box steam-button">
+					<i class="fab fa-steam"></i> <!-- Icône à gauche -->
+					<span class="link-text">Steam</span>
+				</a>
+				
+				<a href="https://www.twitch.tv/chefuichef" class="link-box twitch-button">
+					<i class="fab fa-twitch"></i> <!-- Icône à gauche -->
+					<span class="link-text">Twitch</span>
+				</a>
+				
+			</div>
+		</div><!---->
+	</body>
+</html>
