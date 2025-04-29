@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/jpg" href="/stock/chefuichefx128.ico">	<!-- Tab Icon -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<title>Site de Chef Ui Chef</title>				<!-- Tab title -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Style for social Icons -->
+		<!-- (Start) Discord Embed -->
+		<meta content="Site of Chef Ui Chef" property="og:title">
+		<meta content="Well... at least, they tried :/" property="og:description">
+		<meta content="https://chefuichef.fr/" property="og:url">
+		<meta content="stock/chefuichef.jpg" property="og:image">
+		<meta content="#400080" data-react-helmet="true" name="theme-color">
+		<!-- (End) Discord Embed -->
+		<!-- ---------- (Start) Style can be maked separately but... meh. ---------- -->
+		<style>
+		@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+		body {
+			background-color:#202124;
+			box-sizing: border-box;
+			color:#FFFFFF;
+			font-family: Arial;
+			margin: 0;
+
+			.container {
+				line-height: 150%;
+
+				.header {
+					align-items: center;
+					background-color: #303134;
+					display: flex;
+					justify-content: space-between;
+					padding: 15px;
+
+					.fa-instagram {
+						color:#FFFFFF;
+						border-radius:4px;
+						transition-duration:0.3s;
+					}
+					.fa-instagram:hover {
+						background: linear-gradient(45deg, #FFD420 20%, #F30005 50%, #B900B3 80%);padding:2px 4px 2px 2px;
+						transition-duration:0.3s;
+					}
+
+					h1 {
+						color: #5500F0;
+						font-family: "Pacifico", cursive;
+						font-size: 30px;
+						text-shadow:
+						0 0 7px #fff,
+						0 0 10px #fff,
+						0 0 21px #fff
+					}
+				}
+				.header .social a {
+					color: #222222;
+					padding: 0 5px;
+					text-decoration : none;
+				}
+
+
+				.left {
+					float: left;
+					margin: 0;
+
+					.IMG {
+						display:block;
+						width:171px;
+						margin:10px 10px 16px 10px;
+					}
+
+					.menu {
+						font-family: sans-serif;
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+
+						li:first-child {
+							border-top-left-radius: 0.5em;
+							border-top-right-radius: 0.5em;
+						}
+
+						li:last-child {
+							border-bottom-left-radius: 0.5em;
+							border-bottom-right-radius: 0.5em;
+						}
+
+						li {
+							background-color:#303134;
+							margin:0 10px 0 10px;
+
+							a {
+								color: #FFFFFF;
+								display: block;
+								padding: 8px 16px;
+								text-decoration: none;
+								transition-duration:0.3s;
+							}
+
+							.active {
+								background-color: #404144;
+								color: white;
+								border-radius:0.5em;
+							}
+						}
+						li a:hover:not(.active) {
+							background-color: #353637;
+							color: white;
+							transition-duration:0.3s;
+						}
+					}
+				}
+
+				.content {
+					border-left: 1px solid #d4d4d4;
+					margin-left: 190px;
+					overflow: hidden;
+					padding: 1em;
+					min-height: calc(100vh - 126px);
+				}
+			}
+		}
+
+
+
+		table {
+			border-collapse: collapse;
+			font-family: arial, sans-serif;
+			margin: 30px 0;
+			width: 100%;
+
+			tr:nth-child(1) {
+				background-color: #84e4e2;
+				color: white;
+			}
+
+			td, th {
+				border: 1px solid #dddddd;
+				padding: 8px;
+			}
+		}
+
+		.hide {
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+
+		#ytplayer {
+			width: 640px;
+			height: 360px;
+			frameborder: 0;
+			border-radius:24px;
+			text-align:center;
+			border-width:2px;
+		}
+
+		.grid {
+			width: auto;
+			display: block;
+		}
+
+		.grid-sizer,
+		.card {
+			width: 320px;
+		}
+
+		.wrapper {
+			max-width: 100%;
+			width: fit-content;
+			margin: 0 auto;
+		}
+
+		.grid {
+			margin: 0;
+		}
+
+		.card {
+            background: #282A2D;
+			border: 2px solid transparent;
+			margin: 8px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-decoration: none; /* Supprime la décoration de texte des liens */
+			color: inherit; /* Conserve la couleur du texte */
+			border-radius:16px;
+			transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Transition pour le fond, la bordure et l'ombre */
+		}
+
+		.card iframe {
+			width: 344px; /* Ajustez la largeur pour qu'elle corresponde à celle du conteneur */
+			height: 226px;
+			border: none;
+			display: block;
+			transform: scale(0.85);
+		}
+		
+		.card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Effet d'ombre au survol */
+			border: 2px solid #66c0f4;
+            background: linear-gradient(135deg, #2a475e, #171a21); /* Dégradé de fond au survol */
+        }
+
+		.comment {
+			padding: 10px;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		.card-image {
+			position: absolute;
+			top: 54px; /* Décalage vertical */
+			left: 196px; /* Décalage horizontal */
+			width: 128px; /* Taille de l'image */
+			height: 128px; /* Taille de l'image */
+			transform: rotate(15deg); /* Rotation de l'image */
+			z-index: 1;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">					<!-- (Start) Top bar -->
+				<h1>Chef Ui Chef</h1>
+				<div class="social" style="padding: 1em;">	<!-- (Start) Social Links -->
+					<font <a="" class="social" size="4px"><span>Je suis sur :</span>
+						<a href="https://discord.gg/82cB9Zps7w" target="_blank">
+							<i class="fab fa-discord" style="color:#5865F2" title="Ce serveur discord (pas le mien, celui de TontonDemon)"></i>
+						</a>
+						<a href="https://www.twitch.tv/chefuichef" target="_blank">
+							<i class="fab fa-twitch" style="color:#9047FF" title="Twitch"></i>
+						</a>
+						<a href="https://twitter.com/ChefUiChef" target="_blank">
+							<i class="fab fa-twitter" style="color:#00AEEF" title="Twitter, je rt un pas des trucs de fou ici"></i>
+						</a>
+						<a href="https://www.reddit.com/user/ChefUiChef" target="_blank">
+							<i class="fab fa-reddit" style="color:#FF4500" title="Reddit TRES ! très actif dessus, J'ADORE !"></i>
+						</a>
+						<a href="https://github.com/ChefUiChef" target="_blank">
+							<i class="fab fa-github" style="color:#1B1F23" title="Github bon j'utilise pas trop"></i>
+						</a>
+						<i class="fab fa-tiktok" style="color:#404040" title="Tik... PRANK C FO ! J'irais jamais dedans MDRRR 🤣🤣🤣 (j'aime bien savoir par avance le sujet que je vais regarder) donc YT Shorts sa compte aussi"></i>
+
+						<a href="https://instagram.com/ChefUiChef" target="_blank">
+							<i class="fab fa-instagram" title="Compte mort depuis sa création"></i>
+						</a>
+					</font>
+				</div>						<!-- (End) Social Links -->
+			</header>						<!-- (End) Top bar -->
+			<aside class="left">					<!-- (Start) Left bar -->
+				<img class="IMG" src="/stock/chefuichef.jpg">
+				<ul class="menu">						<!-- (Start) Interactive Buttons -->
+					<li>
+						<a class="active" href="..\">Accueil</a>
+					</li>
+					<li>
+						<a href="/Contact">Contact</a>
+					</li>
+					<li>
+						<a href="/Monsetup">Mon Setup</a>
+					</li>
+					<li>
+						<a href="https://scoresaber.com/u/76561198397022680" target="_blank">ScoreSaber</a>
+					</li>
+					<li>
+						<a href="https://www.beatleader.xyz/u/76561198397022680" target="_blank">BeatLeader</a>
+					</li>
+					<li>
+						<a href="7,jls)_(éQwO§²¤§">DIY Tracker Project</a>
+					</li>
+				</ul>						<!-- (End) Interactive Buttons -->
+			</aside>						<!-- (End) Left bar -->
+			<main class="content">
+				<h1 style="text-align:center;">Steam Fraud Accounts (that tried to contact me)</h1>
+				<hr>
+				<div class="wrapper">
+					<div class="grid">
+						<div class="grid-sizer"></div>
+						<!-- The cards will be generated here -->
+					</div>
+					<div class="additional-content" id="additional-content">
+						<!-- Le contenu additionnel sera inséré ici -->
+					</div>
+				</div>
+			</main>
+			<div id="barre_fixe" style="display: none; position: fixed;bottom: 0;width: 100%;background: #9e3030;color: white;text-align: center;padding: 32px 0px;">
+				<p>
+					<font size="5">⚠FRAUD ACCOUNTS⚠<br/>DO NOT CONTACT THEM</font>
+				</p>
+			</div>
+		</div>
+		<script>
+			const grid = document.querySelector('.grid');
+			const columnWidth = 320 + 20; // card width + gutter
+
+			const updateGridWidth = () => {
+				const columns = Math.floor((window.innerWidth - 40) / columnWidth); // 40px padding
+				grid.style.width = (columns * columnWidth - 20) + 'px'; // remove extra gutter on last column
+			};
+
+			updateGridWidth();
+			window.addEventListener('resize', () => {
+				updateGridWidth();
+				msnry.layout(); // re-layout Masonry on resize
+			});
+
+			const msnry = new Masonry(grid, {
+				itemSelector: '.card',
+				columnWidth: '.grid-sizer',
+				gutter: 20,
+				horizontalOrder: true
+			});
+
+			// Function to generate the Cards
+			const generateCards = (data) => {
+				data.forEach((item, index) => {
+					setTimeout(() => {
+						const card = document.createElement('a');
+						card.href = `https://steamcommunity.com/profiles/${item.id}`;
+						card.className = 'card';
+						card.target = '_blank';
+						card.innerHTML = `
+							<img src="/stock/youtried.png" class="card-image" alt="Image">
+							<iframe src="https://gamer2810.github.io/steam-miniprofile/?accountId=${item.id}"></iframe>
+							<div class="comment">${item.description}</div>
+						`;
+						grid.appendChild(card);
+						msnry.appended(card); // Adds a new card to Masonry.
+						
+						// If it's the last card, generate the additional content
+						if (index === data.length - 1) {
+							addAdditionalContent();
+						}
+					}, index * 200); // 0.2 seconds Interval between each Cards
+				});
+			};
+
+
+			// Function to add the additional content
+			const addAdditionalContent = () => {
+				const additionalContent = document.getElementById('additional-content');
+				additionalContent.innerHTML = `
+					<hr>
+					<h2>Much more could not have been mentionned...</h2>
+					<img src="/stock/steam_blocked.png" alt="Image">
+				`;
+			};
+
+			// Load the data from a JSON File
+			fetch('/stock/data_steam_fraud.json')
+				.then(response => response.json())
+				.then(data => generateCards(data))
+				.catch(error => console.error('Erreur lors du chargement des données:', error));
+		</script>
+	</body>
+</html>
