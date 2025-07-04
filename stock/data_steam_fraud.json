@@ -1,5 +1,5 @@
 [
-    {"id": "76561199565939297", "description": "Sends a twitch stream with fake audience + sends fake team vote links"},
+    {"id": "76561199565939297", "description": "Bot. Sends a twitch stream with fake audience + sends fake team vote links"},
     {"id": "76561199248731745", "description": "Fake faceit link to play a \"match\""},
     {"id": "76561199839433423", "description": "Fake link pretending to be steam to add his \"real\" main account"},
     {"id": "76561198024915446", "description": "Fake faceit link to play a \"match\""},
