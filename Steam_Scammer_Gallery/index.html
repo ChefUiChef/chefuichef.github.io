@@ -353,10 +353,25 @@
 			};
 
 			// Load the data from a JSON File
+			/*
 			fetch('/stock/data_steam_fraud.json')
 				.then(response => response.json())
 				.then(data => generateCards(data))
 				.catch(error => console.error('Erreur lors du chargement des données:', error));
+			/**/
+			fetch('/stock/data_steam_fraud.json')
+			.then(response => response.json())
+			.then(data => {
+				// Trier les données par ID croissant
+				data.sort((a, b) => {
+					const idA = parseInt(a.id, 10);
+					const idB = parseInt(b.id, 10);
+					return idA - idB;
+				});
+				generateCards(data);
+			})
+			.catch(error => console.error('Erreur lors du chargement des données:', error));
 		</script>
 	</body>
 </html>
+
