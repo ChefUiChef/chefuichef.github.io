@@ -1,12 +1,12 @@
 [
     {"id": "76561199305208276", "description": "Fake tournament link"},
-    {"id": "76561199495965031", "description": "Bot. Giving fake steam playtest invites"},
+    {"id": "76561199495965031", "description": "Bot. Fake steam playtest invites"},
     {"id": "76561199396072678", "description": "Chineese Bot. Spams a fake Chineese Scam trading website"},
     {"id": "76561199565939297", "description": "Bot. Sends a twitch stream with fake audience + sends fake team vote links"},
     {"id": "76561199248731745", "description": "Fake faceit link to play a \"match\""},
     {"id": "76561199839433423", "description": "Fake link pretending to be steam to add his \"real\" main account"},
     {"id": "76561198024915446", "description": "Fake faceit link to play a \"match\""},
-    {"id": "76561199749392936", "description": "Bot. Gives a fake Steam Workshop link to vote for \"his\" skin"},
+    {"id": "76561199749392936", "description": "Bot. Fake Steam Workshop link to vote for \"his\" skin"},
     {"id": "76561199744980988", "description": "Fake link pretending to be steam to add his \"real\" main account + redirects to a fake twitch account pretending to be faceit"},
     {"id": "76561199830110318", "description": "Fake link pretending to be steam to add his \"real\" main account"},
     {"id": "76561198024293996", "description": "Fake faceit link to play a \"match\""},
@@ -18,10 +18,11 @@
     {"id": "76561199545091960", "description": "Fake faceit team vote + Fake link pretending to be steam to add his \"real\" main account"},
     {"id": "76561199795166571", "description": "Fake link pretending to be steam to add his \"real\" main account"},
     {"id": "76561199528478991", "description": "Fake link pretending to be steam to add his \"real\" main account"},
-    {"id": "76561198353609907", "description": "Bot. Gives a fake Steam Workshop link for Wallpaper Engine"},
+    {"id": "76561198353609907", "description": "Bot. Fake Steam Workshop link for Wallpaper Engine"},
     {"id": "76561199432040080", "description": "Chineese Bot. Spams a fake Chineese Scam trading website"},
     {"id": "76561199419048952", "description": "Fake faceit team vote"},
     {"id": "0", "description": "Much more scammers will come...."}
 ]
+
 
 
