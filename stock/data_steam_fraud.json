@@ -1,4 +1,5 @@
 [
+    {"id": "76561199128397243", "description": "\"Pretends\" to buy skins, redirects to somewhere else & redirects to a trade scam"},
     {"id": "76561199386920462", "description": "Fake tournament link"},
     {"id": "76561199305208276", "description": "Fake tournament link"},
     {"id": "76561199495965031", "description": "Bot. Fake steam playtest invites"},
@@ -24,6 +25,7 @@
     {"id": "76561199419048952", "description": "Fake faceit team vote"},
     {"id": "0", "description": "Much more scammers will come...."}
 ]
+
 
 
 
