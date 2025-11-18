@@ -1,4 +1,5 @@
 [
+    {"id": "76561199831344034", "description": "Sends a promocode to a fake gamgling website"},
     {"id": "76561199423176422", "description": "French scammer. Sends discord server through CS team chat to redirect to a fake trading website"},
     {"id": "76561199128397243", "description": "\"Pretends\" to buy skins, redirects to somewhere else & redirects to a trade scam"},
     {"id": "76561199386920462", "description": "Fake tournament link"},
@@ -26,6 +27,7 @@
     {"id": "76561199419048952", "description": "Fake faceit team vote"},
     {"id": "0", "description": "Much more scammers will come...."}
 ]
+
 
 
 
