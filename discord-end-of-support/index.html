@@ -8,21 +8,23 @@
         // Redirect script
         (function () {
             const lang = navigator.language || navigator.userLanguage;
-            const prefix = lang.toLowerCase().startsWith("fr")
-                ? "/fr"
-                : "/en";
 
-            const path = window.location.pathname;
+            const suffix = lang.toLowerCase().startsWith("fr")
+                ? "fr"
+                : "en";
 
-            if (/^\/(fr|en)(\/|$)/i.test(path)) {
+            const path = window.location.pathname.replace(/\/+$/, "");
+
+            if (/\/(fr|en)$/i.test(path)) {
                 return;
             }
 
-            window.location.replace(
-                prefix + path +
+            const newUrl =
+                path + "/" + suffix +
                 window.location.search +
-                window.location.hash
-            );
+                window.location.hash;
+
+            window.location.replace(newUrl);
         })();
     </script>
     <style>
