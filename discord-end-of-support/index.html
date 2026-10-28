@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Redirect script
+        (function () {
+            const lang = navigator.language || navigator.userLanguage;
+            const prefix = lang.toLowerCase().startsWith("fr")
+                ? "/fr"
+                : "/en";
+
+            const path = window.location.pathname;
+
+            if (/^\/(fr|en)(\/|$)/i.test(path)) {
+                return;
+            }
+
+            window.location.replace(
+                prefix + path +
+                window.location.search +
+                window.location.hash
+            );
+        })();
+    </script>
+    <style>
+        body {
+            background-color: #080808;
+            color: #C0C0C0;
+            text-align: center;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Bahnschrift;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: auto;
+            text-align: center;
+            font-size: 64px;
+        }
+
+        .button {
+            background-color: #808080;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+            .button:hover {
+                background-color: #C0C0C0;
+                transition-duration: 0.3s;
+            }
+    </style>
+
+</head>
+    <body>
+        <h1>Redirecting...</h1>
+        <footer>
+            <p>This page redirects you to the right language based on your browser.</p>
+            <p>If JavaScript is disabled or doesn't work please, select the language below</p>
+            <span>
+                <a class="button" href="./fr">Français 🇫🇷</a>
+                <a class="button" href="./en">English 🇬🇧</a>
+            </span>
+        </footer>
+    </body>
+</html>
